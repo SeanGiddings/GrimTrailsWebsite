@@ -51,7 +51,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
   }
   
   .navbar-dark .navbar-nav .nav-link {
-    color: #f11203;
+    color: #fff;
   }
   
   .navbar-nav {
@@ -59,7 +59,17 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
     width: 95%;
     font-size: 1.5rem;
   }
-  
+
+  #menu ul {
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    font-size: 1.5rem;
+  }
+
+  .menu a {
+    color: #f11203;
+  }
   .description__container {
     margin: 50px 50px;
     text-align: center;

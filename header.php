@@ -64,7 +64,7 @@
       </div>
     </nav>
 
-      <!--<div id="branding">
+      <div id="branding">
         <div id="site-title">
           <?php if (is_front_page() || is_home() || is_front_page() && is_home()) {
             echo '<h1>';
@@ -77,7 +77,6 @@
         <div id="site-description"><?php bloginfo('description'); ?></div>
       </div>
       <nav id="menu">
-        <div id="search"><?php get_search_form(); ?></div>
         <?php wp_nav_menu(array('theme_location' => 'main-menu')); ?>
       </nav>-->
 
