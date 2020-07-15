@@ -52,7 +52,11 @@
           </li>
         </ul>
       </div>
-      <div class="header__socialmedia">
+    </nav>
+
+      <nav id="menu">
+        <?php wp_nav_menu(array('theme_location' => 'main-menu')); ?>
+        <div class="header__socialmedia">
         <a href="https://www.facebook.com/GrimTrails/" target="_blank">
           <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/social_facebook.png" alt="facebook icon" class="footer__facebook socialmedia__icon" /></a>
         <a href="https://twitter.com/grimtrails?lang=en" target="_blank">
@@ -62,23 +66,7 @@
           <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/social_youtube.png" alt="youtube icon" class="footer__youtube socialmedia__icon" />
         </a>
       </div>
-    </nav>
-
-      <div id="branding">
-        <div id="site-title">
-          <?php if (is_front_page() || is_home() || is_front_page() && is_home()) {
-            echo '<h1>';
-          } ?>
-          <a href="<?php echo esc_url(home_url('/')); ?>" title="<?php echo esc_html(get_bloginfo('name')); ?>" rel="home"><?php echo esc_html(get_bloginfo('name')); ?></a>
-          <?php if (is_front_page() || is_home() || is_front_page() && is_home()) {
-            echo '</h1>';
-          } ?>
-        </div>
-        <div id="site-description"><?php bloginfo('description'); ?></div>
-      </div>
-      <nav id="menu">
-        <?php wp_nav_menu(array('theme_location' => 'main-menu')); ?>
-      </nav>-->
+      </nav>
 
           <!--Logo-->
     <div class="header__container">

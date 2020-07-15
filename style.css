@@ -70,9 +70,15 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
   .menu a {
     color: #f11203;
   }
+
+
   .description__container {
     margin: 50px 50px;
     text-align: center;
+  }
+
+  .description__title h1 {
+    display: none;
   }
   
   .description__text {
