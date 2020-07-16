@@ -123,3 +123,22 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
       justify-content: space-evenly;
   }
   
+
+  /*** Tertiary Page Styles ***/
+
+  .tertpage__title {
+    font-size: 70px;
+    margin: 30px 0;
+    text-align: center;
+  }
+
+  .tertpage__text {
+    font-size: 25px;
+    margin: 30px 0;
+    font-family: 'Federo', sans-serif;
+    text-align: center;
+  }
+
+  .tertpage__text a {
+    color: #f11203;
+  }
