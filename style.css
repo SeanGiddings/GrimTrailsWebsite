@@ -39,7 +39,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
     font-family: "edo_szregular", sans-serif;
   }
   
-  .body__wrapper {
+  .body__wrapper, .header__container {
     background-color: rgba(0, 0, 0, 0.8);
     max-width: 1280px;
     margin: 0 auto;
@@ -51,7 +51,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
   }
   
   .navbar-dark .navbar-nav .nav-link {
-    color: #fff;
+    color: #f11203;
   }
   
   .navbar-nav {
@@ -60,25 +60,13 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
     font-size: 1.5rem;
   }
 
-  #menu ul {
-    display: flex;
-    justify-content: space-between;
-    width: 95%;
-    font-size: 1.5rem;
-  }
-
-  .menu a {
-    color: #f11203;
-  }
-
-
   .description__container {
     margin: 50px 50px;
     text-align: center;
   }
 
   .description__title h1 {
-    display: none;
+    font-size: 40px;
   }
   
   .description__text {
