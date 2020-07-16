@@ -18,24 +18,28 @@
   <div id="wrapper" class="hfeed">
     <header id="header">
 
-    <!--NavBar-->
+      <!--NavBar-->
+      <div class="header__container">
+      <?php
+      $menuItems = wp_get_nav_menu_items('Main Navigation');
+      ?>
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
 
-    <nav class="navbar navbar-expand-lg navbar-dark">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Calendar</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Tickets</a>
-          </li>
-          <li class="nav-item dropdown">
+            <?php
+            foreach ($menuItems as &$item) {
+              $menuItemMarkup = '<li class="nav-item nav__item nav__' . strtolower($item->title) . '">';
+              $menuItemMarkup .= '<a class="nav-link nav__link" href="' . $item->url . '">' . $item->title . '</a>';
+              $menuItemMarkup .= '</li>';
+              echo $menuItemMarkup;
+            }
+            ?>
+
+            <!--<li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Reviews
             </a>
@@ -43,40 +47,30 @@
               <a class="dropdown-item" href="#">Facebook Reviews</a>
               <a class="dropdown-item" href="#">Accolades</a>
             </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">FAQ</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Directions</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-
-      <nav id="menu">
-        <?php wp_nav_menu(array('theme_location' => 'main-menu')); ?>
+          </li>--->
+        </div>
         <div class="header__socialmedia">
-        <a href="https://www.facebook.com/GrimTrails/" target="_blank">
-          <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/social_facebook.png" alt="facebook icon" class="footer__facebook socialmedia__icon" /></a>
-        <a href="https://twitter.com/grimtrails?lang=en" target="_blank">
-          <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/social_twitter.png" alt="twitter icon" class="footer__twitter socialmedia__icon" />
-        </a>
-        <a href="https://www.youtube.com/channel/UCiBMbJ1NF6Kax5rUuvlSY3g" target="_blank">
-          <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/social_youtube.png" alt="youtube icon" class="footer__youtube socialmedia__icon" />
-        </a>
-      </div>
+            <a href="https://www.facebook.com/GrimTrails/" target="_blank">
+              <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/social_facebook.png" alt="facebook icon" class="footer__facebook socialmedia__icon" /></a>
+            <a href="https://twitter.com/grimtrails?lang=en" target="_blank">
+              <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/social_twitter.png" alt="twitter icon" class="footer__twitter socialmedia__icon" />
+            </a>
+            <a href="https://www.youtube.com/channel/UCiBMbJ1NF6Kax5rUuvlSY3g" target="_blank">
+              <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/social_youtube.png" alt="youtube icon" class="footer__youtube socialmedia__icon" />
+            </a>
+          </div>
       </nav>
 
-          <!--Logo-->
-    <div class="header__container">
-      <a class="header__brand img-fluid" href="#">
-        <img id="logo" class="header__logo" src="<?php echo get_stylesheet_directory_uri(); ?>/images/logobg.png" alt="Grim Trails Haunted House Logo" aria-label="Grim Trails Haunted House Logo" />
-      </a>
-    </div>-->
 
-    <!--Announcements Section-->
-    <!--
+        <!--Logo-->
+
+          <a class="header__brand img-fluid" href="#">
+            <img id="logo" class="header__logo" src="<?php echo get_stylesheet_directory_uri(); ?>/images/logobg.png" alt="Grim Trails Haunted House Logo" aria-label="Grim Trails Haunted House Logo" />
+          </a>
+        </div>
+
+        <!--Announcements Section-->
+        <!--
         <div class="Announcement__container">
         <div class="Announcement Text">
           Unfortunately, Grim Trails has been rained out.
