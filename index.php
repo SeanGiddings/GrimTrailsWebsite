@@ -9,7 +9,7 @@
     </div>
 
     <!--Video-->
-    <iframe width="100%" height="315" src="https://www.youtube.com/embed/cP28lbBz-3Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="100%" height="500" src="https://www.youtube.com/embed/cP28lbBz-3Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
     <!--Haunt Description-->
     <div class="description__container">

@@ -81,7 +81,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
   }
   
   .schedule__column {
-      font-family: 'Federo', sans-serif;
+
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -92,6 +92,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
   }
   
   .schedule__text {
+      font-family: 'Federo', sans-serif;
       font-size: 30px;
   }
   .schedule__column-right {
@@ -111,6 +112,19 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
     font-size: 50px;
     background: rgba(0, 0, 0, 0.5);
     border: 5px solid #2b0100;
+    text-decoration: none;
+  }
+
+  .tickets-button a:hover {
+    text-align: center;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 52px;
+    background: rgba(0, 0, 0, 0.5);
+    border: 5px solid #2b0100;
+    text-decoration: none;
   }
   
   .footer__container {
@@ -118,10 +132,23 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
       font-family: 'Federo', sans-serif;
       text-align: center;
   }
+
+  .footer__container a {
+    color: #f11203;
+}
+
+.footer__container a:hover {
+  color: #f11203;
+  text-decoration: none;
+}
   
   .footer__addressline {
       display: flex;
       justify-content: space-evenly;
+  }
+
+  .footer__disclaimer {
+      padding: 15px;
   }
   
 
