@@ -114,3 +114,15 @@ return count( $comments_by_type['comment'] );
 return $count;
 }
 }
+
+function additional_custom_styles() {
+
+    /*Enqueue The Styles*/
+    wp_enqueue_style( 'uniquestylesheetid', get_template_directory_uri() . '/css/grid-gallery.min.css' ); 
+}
+add_action( 'wp_enqueue_scripts', 'additional_custom_styles' );
+
+function additional_custom_scripts() {
+    wp_enqueue_script( 'my-script', get_template_directory_uri() . '/js/custom.js' );
+}
+add_action( 'wp_enqueue_scripts', 'additional_custom_scripts' );
