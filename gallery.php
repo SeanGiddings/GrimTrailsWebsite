@@ -4,8 +4,11 @@
 
   <div class="body__wrapper">
 
-     
-      <!--Haunt Description-->
+         <!--Buy Tickets-->
+    <div class="tickets-button">
+      <a href="/tickets">Buy Tickets Online</a>
+    </div>
+      <!--Gallery-->
       <div class="tertpage__container">
 
         <div class="row" id="gallery" data-toggle="modal" data-target="#exampleModal">
