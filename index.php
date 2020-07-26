@@ -12,7 +12,7 @@
     <div class="video-container">
     <iframe width="100%" height="500" src="https://www.youtube.com/embed/cP28lbBz-3Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
-      
+
     <!--Haunt Description-->
     <div class="description__container">
       <div class="description__title">
@@ -34,6 +34,9 @@
 
     <!--Event Schedule Blocks-->
     <div class="schedule__container">
+    <div class="schedule__column schedule__mobile">
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/calendar.png" class="schedule__image img-fluid" />
+      </div>
       <div class="schedule__column">
         <div class="schedule__text">
           <div class="schedule__subtitle">2019 EVENT SCHEDULE</div>

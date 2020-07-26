@@ -119,12 +119,16 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
     .tickets-button a {
       font-size: 40px;
     }
+    .footer__addressline {
+      display: block;
+      text-align: center;
+  }
   }
   
 
   
   .schedule__container {
-    display: block;
+    display: flex;
     justify-content: space-between;
   }
   
@@ -147,7 +151,9 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
   .schedule__column-right {
       margin: 0 30px;
   }
-
+  .schedule__mobile {
+    display: none;
+  }
 
   .video-container {
     margin-top: 20px;
@@ -175,6 +181,45 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 
   .footer__disclaimer {
       padding: 15px;
+  }
+
+  @media (max-width: 768px) {
+    .description__container {
+      margin: 40px 20px;
+    }
+    .description__title h1 {
+      font-size: 30px;
+    }  
+    .description__text {
+      display: none;
+    }
+    .tickets-button a {
+      font-size: 40px;
+    }
+    .footer__addressline {
+      display: block;
+      text-align: center;
+      padding: 15px;
+  }
+  .footer__phone {
+    padding: 15px;
+}
+  }
+
+  @media (max-width: 992px) {
+    .schedule__container {
+      display: block;
+      justify-content: space-between;
+    }
+    .schedule__mobile {
+      display: block;
+    }
+    .schedule__column-right {
+      display: none;
+  }
+  .schedule__text {
+    margin: 30px auto;
+}
   }
   
 
