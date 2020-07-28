@@ -289,6 +289,10 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
   font-family: 'Federo', sans-serif;
 }
 
+.awards__images img {
+  height: 200px;
+}
+
 .disclaimer__text {
   font-size: 20px;
   margin-top: 20px;
