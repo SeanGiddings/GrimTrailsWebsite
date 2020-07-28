@@ -238,7 +238,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
     text-align: center;
   }
 
-  .tertpage__text a {
+  .tertpage__text a, .awards__list a {
     color: #f11203;
   }
 
@@ -250,21 +250,42 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 
   /*** FAQ ***/
   
-.faq__question {
+.faq__question  {
   color: #f11203;
   font-size: 30px;
   margin-top: 60px;
 }
 
-.faq__answer {
+.faq__answer, .awards__list {
   font-size: 22px;
   margin-top: 20px;
   font-family: 'Federo', sans-serif;
 }
 
-.disclaimer__title {
+.awards__list{
+  list-style-type: circle;
+  padding: 30px;
+}
+
+.awards__list li { 
+  padding: 10px;
+}
+
+.disclaimer__title, .awards__title {
   font-size: 30px;
   margin-top: 60px;
+  font-family: 'Federo', sans-serif;
+}
+.awards__subtitle {
+  font-size: 25px;
+  margin-top: 20px;
+  font-family: 'Federo', sans-serif;
+}
+
+.awards__article-text p {
+  padding: 20px;
+  font-size: 25px;
+  line-height: 30px;
   font-family: 'Federo', sans-serif;
 }
 
