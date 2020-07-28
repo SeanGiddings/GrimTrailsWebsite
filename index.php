@@ -10,8 +10,8 @@
 
     <!--Video-->
     <div class="video-container">
-    <iframe width="100%" height="500" src="https://www.youtube.com/embed/cP28lbBz-3Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
+      <iframe width="100%" height="500" src="https://www.youtube.com/embed/cP28lbBz-3Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
 
     <!--Haunt Description-->
     <div class="description__container">
@@ -34,7 +34,7 @@
 
     <!--Event Schedule Blocks-->
     <div class="schedule__container">
-    <div class="schedule__column schedule__mobile">
+      <div class="schedule__column schedule__mobile">
         <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/calendar.png" class="schedule__image img-fluid" />
       </div>
       <div class="schedule__column">
@@ -59,4 +59,4 @@
     <div class="map__container">
       <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12541.558295415894!2d-85.5336743!3d38.2008512!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2a883abdca7cee7c!2sGrim%20Trails%20Haunted%20Attraction!5e0!3m2!1sen!2sus!4v1593451822879!5m2!1sen!2sus" width="100%" height="450" frameborder="0" style="border: 0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
     </div>
-<?php get_footer(); ?>
+    <?php get_footer(); ?>
