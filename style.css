@@ -49,12 +49,6 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
   .header__logo {
     width: 100%;
   }
-
-  @media (max-width: 768px) {
-    .header__logo {
-      display: none;
-    }
-  }
   
   .navbar-dark .navbar-nav .nav-link {
     color: #f11203;
@@ -271,12 +265,12 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
   padding: 10px;
 }
 
-.disclaimer__title, .awards__title {
+.disclaimer__title, .awards__title, .schedule__title {
   font-size: 30px;
   margin-top: 60px;
   font-family: 'Federo', sans-serif;
 }
-.awards__subtitle {
+.awards__subtitle, .schedule__subtitle {
   font-size: 25px;
   margin-top: 20px;
   font-family: 'Federo', sans-serif;
