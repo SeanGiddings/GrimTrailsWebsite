@@ -24,9 +24,9 @@
     </div>
 
     <div class="row awards__images">
-      <div class="col-sm-4 col-sm-offset-1"><img class="awards__image" src="images/awards-1.png" alt=""></div>
-      <div class="col-sm-4 col-sm-offset-1"><img class="awards__image" src="images/awards-2.png" alt=""></div>
-      <div class="col-sm-4"><img class="awards__image" src="images/awards-3.png" alt=""></div>
+      <div class="col-sm-4 col-sm-offset-1"><img class="awards__image" src="<?php echo get_stylesheet_directory_uri(); ?>/images/awards-1.png" alt=""></div>
+      <div class="col-sm-4 col-sm-offset-1"><img class="awards__image" src="<?php echo get_stylesheet_directory_uri(); ?>/images/awards-2.png" alt=""></div>
+      <div class="col-sm-4"><img class="awards__image" src="<?php echo get_stylesheet_directory_uri(); ?>/images/awards-3.png" alt=""></div>
     </div>
 
     <h2 class="awards__title awards__list-title">In just six years, Grim Trails has piled on 25+ awards, earning national recognition in addition to becoming a local Halloween staple.</h2>
