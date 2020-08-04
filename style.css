@@ -320,3 +320,21 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
   .awards__images {
     text-align: center;
   }
+
+  .schedulepage__container {
+    text-align: center;
+  }
+
+  .video-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.video-responsive iframe{
+    left:0;
+    top:20px;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
