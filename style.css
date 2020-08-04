@@ -14,153 +14,303 @@ BlankSlate WordPress Theme © 2011-2019 TidyThemes
 BlankSlate is distributed under the terms of the GNU GPL
 */
 
-html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}body{line-height:1}button{outline:0}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}q{display:inline;font-style:italic}q:before{content:'"';font-style:normal}q:after{content:'"';font-style:normal}textarea,input[type="text"],input[type="button"],input[type="submit"],input[type="reset"],input[type="search"],input[type="password"]{-webkit-appearance:none;appearance:none;border-radius:0}table{border-collapse:collapse;border-spacing:0}th,td{padding:2px}big{font-size:120%}small,sup,sub{font-size:80%}sup{vertical-align:super}sub{vertical-align:sub}dd{margin-left:20px}kbd,tt{font-family:courier;font-size:12px}ins{text-decoration:underline}del,strike,s{text-decoration:line-through}dt{font-weight:bold}address,cite,var{font-style:italic}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
-.sticky{}.bypostauthor{}.wp-caption{}.wp-caption-text{}.gallery-caption{}.alignright{}.alignleft{}.aligncenter{}.screen-reader-text{clip:rect(1px, 1px, 1px, 1px);position:absolute !important}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline
+}
+
+body {
+  line-height: 1
+}
+
+button {
+  outline: 0
+}
+
+ol, ul {
+  list-style: none
+}
+
+blockquote, q {
+  quotes: none
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none
+}
+
+q {
+  display: inline;
+  font-style: italic
+}
+
+q:before {
+  content: '"';
+  font-style: normal
+}
+
+q:after {
+  content: '"';
+  font-style: normal
+}
+
+textarea, input[type="text"], input[type="button"], input[type="submit"], input[type="reset"], input[type="search"], input[type="password"] {
+  -webkit-appearance: none;
+  appearance: none;
+  border-radius: 0
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0
+}
+
+th, td {
+  padding: 2px
+}
+
+big {
+  font-size: 120%
+}
+
+small, sup, sub {
+  font-size: 80%
+}
+
+sup {
+  vertical-align: super
+}
+
+sub {
+  vertical-align: sub
+}
+
+dd {
+  margin-left: 20px
+}
+
+kbd, tt {
+  font-family: courier;
+  font-size: 12px
+}
+
+ins {
+  text-decoration: underline
+}
+
+del, strike, s {
+  text-decoration: line-through
+}
+
+dt {
+  font-weight: bold
+}
+
+address, cite, var {
+  font-style: italic
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent
+}
+
+.sticky {}
+
+.bypostauthor {}
+
+.wp-caption {}
+
+.wp-caption-text {}
+
+.gallery-caption {}
+
+.alignright {}
+
+.alignleft {}
+
+.aligncenter {}
+
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important
+}
 
 @font-face {
-    font-family: "edo_szregular";
-    src: url("font/edosz-webfont.woff2") format("woff2"),
-      url("font/edosz-webfont.woff") format("woff");
-    font-weight: normal;
-    font-style: normal;
-  }
-  
-  @import url('https://fonts.googleapis.com/css2?family=Federo&display=swap');
-  
-  body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #eee;
-    background: #000 url("images/bg.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    margin: 0;
-    color: #fff;
-    font-family: "edo_szregular", sans-serif;
-  }
-  
-  .body__wrapper, .header__container, .footer__container {
-    background-color: rgba(0, 0, 0, 0.8);
-    max-width: 1280px;
-    margin: 0 auto;
-    padding: 5px 20px 0;
-  }
-  
-  .header__logo {
-    width: 100%;
-  }
-  
-  .navbar-dark .navbar-nav .nav-link {
-    color: #f11203;
-  }
-  
-  .navbar-nav {
-    justify-content: space-between;
-    width: 95%;
-    font-size: 1.5rem;
-  }
+  font-family: "edo_szregular";
+  src: url("font/edosz-webfont.woff2") format("woff2"), url("font/edosz-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
 
-  .tickets-button a {
-    color: #f11203;
-    text-align: center;
-    height: 100px;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    font-size: 50px;
-    background: rgba(0, 0, 0, 0.5);
-    border: 5px solid #2b0100;
-    text-decoration: none;
+@import url('https://fonts.googleapis.com/css2?family=Federo&display=swap');
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #eee;
+  background: #000 url("images/bg.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  margin: 0;
+  color: #fff;
+  font-family: "edo_szregular", sans-serif;
+}
+
+.body__wrapper, .header__container, .footer__container {
+  background-color: rgba(0, 0, 0, 0.8);
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 5px 20px 0;
+}
+
+.header__logo {
+  width: 100%;
+}
+
+.header__logo-desktop {
+  display: block;
+}
+
+.header__logo-mobile {
+  display: none;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #f11203;
+}
+
+.navbar-nav {
+  justify-content: space-between;
+  width: 95%;
+  font-size: 1.5rem;
+}
+
+.tickets-button a {
+  color: #f11203;
+  text-align: center;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-size: 50px;
+  background: rgba(0, 0, 0, 0.5);
+  border: 5px solid #2b0100;
+  text-decoration: none;
+}
+
+.tickets-button a:hover {
+  text-align: center;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-size: 52px;
+  background: rgba(0, 0, 0, 0.5);
+  border: 5px solid #2b0100;
+  text-decoration: none;
+}
+
+.description__container {
+  margin: 50px 50px;
+  text-align: center;
+}
+
+.description__title h1 {
+  font-size: 40px;
+}
+
+.description__text {
+  font-size: 25px;
+  margin-top: 30px;
+  line-height: 50px;
+}
+
+@media (max-width: 992px) {
+  .header__socialmedia {
+    position: absolute;
+    right: 10px;
+    top: 10px;
   }
+}
 
-  .tickets-button a:hover {
-    text-align: center;
-    height: 100px;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    font-size: 52px;
-    background: rgba(0, 0, 0, 0.5);
-    border: 5px solid #2b0100;
-    text-decoration: none;
-  }
-
-
+@media (max-width: 768px) {
   .description__container {
-    margin: 50px 50px;
-    text-align: center;
+    margin: 40px 20px;
   }
-
   .description__title h1 {
-    font-size: 40px;
+    font-size: 30px;
   }
   .description__text {
-    font-size: 25px;
-    margin-top: 30px;
-    line-height: 50px;
-  }
-
-  @media (max-width: 768px) {
-    .description__container {
-      margin: 40px 20px;
-    }
-    .description__title h1 {
-      font-size: 30px;
-    }  
-    .description__text {
-      display: none;
-    }
-    .tickets-button a {
-      font-size: 40px;
-    }
-    .footer__addressline {
-      display: block;
-      text-align: center;
-  }
-  }
-  
-
-  
-  .schedule__container {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .schedule__column {
-
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      text-align: center;
-  }
-  
-  .schedule__subtitle {
-      font-size: 40px;
-  }
-  
-  .schedule__text {
-      font-family: 'Federo', sans-serif;
-      font-size: 30px;
-  }
-  .schedule__column-right {
-      margin: 0 30px;
-  }
-  .schedule__mobile {
     display: none;
   }
-
-  .video-container {
-    margin-top: 20px;
+  .tickets-button a {
+    font-size: 40px;
   }
-  
-  .footer__container {
-      padding: 30px 0;
-      font-family: 'Federo', sans-serif;
-      text-align: center;
+  .footer__addressline {
+    display: block;
+    text-align: center;
   }
+}
 
-  .footer__container a {
-    color: #f11203;
+@media (max-width: 500px) {
+  .header__logo-desktop {
+    display: none;
+  }
+  .header__logo-mobile {
+    display: block;
+  }
+}
+
+.schedule__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.schedule__column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.schedule__subtitle {
+  font-size: 40px;
+}
+
+.schedule__text {
+  font-family: 'Federo', sans-serif;
+  font-size: 30px;
+}
+
+.schedule__column-right {
+  margin: 0 30px;
+}
+
+.schedule__mobile {
+  display: none;
+}
+
+.video-container {
+  margin-top: 20px;
+}
+
+.footer__container {
+  padding: 30px 0;
+  font-family: 'Federo', sans-serif;
+  text-align: center;
+}
+
+.footer__container a {
+  color: #f11203;
 }
 
 .footer__container a:hover {
@@ -169,7 +319,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 }
 
 .covid__container {
-  padding: 20px 0 30px;
+  padding: 20px 20px 30px;
   background: #000;
   margin-bottom: 20px;
 }
@@ -180,97 +330,95 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
   font-family: "edo_szregular", sans-serif;
 }
 
-
 .covid__text {
   font-size: 25px;
   margin-top: 20px;
 }
-  
+
+.footer__addressline {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.footer__disclaimer {
+  padding: 15px;
+}
+
+@media (max-width: 768px) {
+  .description__container {
+    margin: 40px 20px;
+  }
+  .description__title h1 {
+    font-size: 30px;
+  }
+  .description__text {
+    display: none;
+  }
+  .tickets-button a {
+    font-size: 40px;
+  }
   .footer__addressline {
-      display: flex;
-      justify-content: space-evenly;
-  }
-
-  .footer__disclaimer {
-      padding: 15px;
-  }
-
-  @media (max-width: 768px) {
-    .description__container {
-      margin: 40px 20px;
-    }
-    .description__title h1 {
-      font-size: 30px;
-    }  
-    .description__text {
-      display: none;
-    }
-    .tickets-button a {
-      font-size: 40px;
-    }
-    .footer__addressline {
-      display: block;
-      text-align: center;
-      padding: 15px;
+    display: block;
+    text-align: center;
+    padding: 15px;
   }
   .footer__phone {
     padding: 15px;
-}
   }
+}
 
-  @media (max-width: 992px) {
-    .schedule__container {
-      display: block;
-      justify-content: space-between;
-    }
-    .schedule__mobile {
-      display: block;
-    }
-    .schedule__column-right {
-      display: none;
+@media (max-width: 992px) {
+  .schedule__container {
+    display: block;
+    justify-content: space-between;
+  }
+  .schedule__mobile {
+    display: block;
+  }
+  .schedule__column-right {
+    display: none;
   }
   .schedule__text {
     margin: 30px auto;
+  }
 }
-  }
-  
 
-  /*** Tertiary Page Styles ***/
+/*** Tertiary Page Styles ***/
 
+.tertpage__title {
+  font-size: 70px;
+  margin: 30px 0;
+  text-align: center;
+  padding-bottom: 30px;
+  border-bottom: solid 2px #333;
+}
+
+.tertpage__text {
+  font-size: 25px;
+  margin: 30px 0;
+  font-family: 'Federo', sans-serif;
+  text-align: center;
+}
+
+.tertpage__text a, .awards__list a {
+  color: #f11203;
+}
+
+.paypal-button input {
+  margin: 0 auto 40px;
+  display: block;
+  max-width: 100%;
+}
+
+@media (max-width: 768px) {
   .tertpage__title {
-    font-size: 70px;
-    margin: 30px 0;
-    text-align: center;
-    padding-bottom: 30px;
-    border-bottom: solid 2px #333;
+    font-size: 50px;
   }
+}
 
-  .tertpage__text {
-    font-size: 25px;
-    margin: 30px 0;
-    font-family: 'Federo', sans-serif;
-    text-align: center;
-  }
+/*** FAQ ***/
 
-  .tertpage__text a, .awards__list a {
-    color: #f11203;
-  }
-
-  .paypal-button input {
-    margin: 0 auto 40px;
-    display: block;
-    max-width: 100%;
-  }
-
-  @media (max-width: 768px) {
-    .tertpage__title  {
-      font-size: 50px;
-    } 
-  }
-
-  /*** FAQ ***/
-  
-.faq__question  {
+.faq__question {
   color: #f11203;
   font-size: 30px;
   margin-top: 60px;
@@ -282,12 +430,12 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
   font-family: 'Federo', sans-serif;
 }
 
-.awards__list{
+.awards__list {
   list-style-type: circle;
   padding: 30px;
 }
 
-.awards__list li { 
+.awards__list li {
   padding: 10px;
 }
 
@@ -326,40 +474,59 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 }
 
 #gallery img {
-    height: 275px;
-    object-fit: cover;
-    padding: 5px;
-  }
-
-  .awards__images {
-    text-align: center;
-  }
-
-  .schedulepage__container {
-    text-align: center;
-    margin: 40px auto;
-  }
-
-  .schedulepage__image {
-    margin-top: 20px;
-  }
-
-  .video-responsive{
-    overflow:hidden;
-    padding-bottom:56.25%;
-    position:relative;
-    height:0;
+  height: 275px;
+  object-fit: cover;
+  padding: 5px;
 }
-.video-responsive iframe{
-    left:0;
-    top:20px;
-    height:100%;
-    width:100%;
-    position:absolute;
+
+.awards__images {
+  text-align: center;
+}
+
+.schedulepage__container {
+  text-align: center;
+  margin: 40px auto;
+}
+
+.schedulepage__image {
+  margin-top: 20px;
+}
+
+.video-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+
+.video-responsive iframe {
+  left: 0;
+  top: 20px;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.modal-header {
+  display: none;
+}
+
+.modal-content {
+  background-color: #000;
+}
+
+.modal-footer {
+  border-top: 1px solid #000;
 }
 
 @media (max-width: 768px) {
   .awards__article-text {
     font-size: 20px;
-  } 
+  }
+}
+
+@media (max-width: 1200px) {
+  .awards__images {
+    display: none;
+  }
 }
