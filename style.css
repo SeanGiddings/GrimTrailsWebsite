@@ -241,6 +241,8 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
     font-size: 70px;
     margin: 30px 0;
     text-align: center;
+    padding-bottom: 30px;
+    border-bottom: solid 2px #333;
   }
 
   .tertpage__text {
@@ -258,6 +260,12 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
     margin: 0 auto 40px;
     display: block;
     max-width: 100%;
+  }
+
+  @media (max-width: 768px) {
+    .tertpage__title  {
+      font-size: 50px;
+    } 
   }
 
   /*** FAQ ***/
@@ -283,18 +291,24 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
   padding: 10px;
 }
 
-.disclaimer__title, .awards__title, .schedule__title {
+.disclaimer__title {
   font-size: 30px;
   margin-top: 60px;
   font-family: 'Federo', sans-serif;
 }
+
+.awards__title, .schedule__title {
+  font-size: 30px;
+  font-family: 'Federo', sans-serif;
+}
+
 .awards__subtitle, .schedule__subtitle {
   font-size: 25px;
   margin-top: 20px;
   font-family: 'Federo', sans-serif;
 }
 
-.awards__article-text p {
+.awards__article-text {
   padding: 20px;
   font-size: 25px;
   line-height: 30px;
@@ -323,6 +337,11 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 
   .schedulepage__container {
     text-align: center;
+    margin: 40px auto;
+  }
+
+  .schedulepage__image {
+    margin-top: 20px;
   }
 
   .video-responsive{
@@ -337,4 +356,10 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
     height:100%;
     width:100%;
     position:absolute;
+}
+
+@media (max-width: 768px) {
+  .awards__article-text {
+    font-size: 20px;
+  } 
 }
