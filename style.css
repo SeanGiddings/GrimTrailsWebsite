@@ -263,7 +263,7 @@ body {
 
 @media (max-width: 500px) {
   .header__logo-desktop {
-    display: none;
+    display: block;
   }
   .header__logo-mobile {
     display: block;
