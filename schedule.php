@@ -18,9 +18,9 @@
         </div>
         <div class="schedulepage__container">
 
-        <h2 class="schedule__title">Hours: Dusk to 12:30am<h2>
-                <h3 class="schedule__subtitle">Tickets available on site during open hours.</h3>
-                <h3 class="schedule__subtitle">Purchase tickets online 24/7!</h3>
+        <h2 class="schedulepage__title">Hours: Dusk to 12:30am<h2>
+                <h3 class="schedulepage__subtitle">Tickets available on site during open hours.</h3>
+                <h3 class="schedulepage__subtitle">Purchase tickets online 24/7!</h3>
 
                 <div class="schedulepage__image">
                     <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/calendar.png" class="schedule__image img-fluid" />

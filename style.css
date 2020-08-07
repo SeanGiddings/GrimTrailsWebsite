@@ -344,6 +344,10 @@ body {
   padding: 15px;
 }
 
+.map__container {
+  margin-top: 20px;
+}
+
 @media (max-width: 768px) {
   .description__container {
     margin: 40px 20px;
@@ -451,7 +455,7 @@ body {
 }
 
 .awards__subtitle, .schedule__subtitle {
-  font-size: 25px;
+  font-size: 35px;
   margin-top: 20px;
   font-family: 'Federo', sans-serif;
 }
@@ -484,8 +488,17 @@ body {
 }
 
 .schedulepage__container {
+  font-family: 'Federo', sans-serif;
   text-align: center;
   margin: 40px auto;
+}
+
+.schedulepage__title {
+  font-size: 40px;
+}
+
+.schedulepage__subtitle {
+  font-size: 30px;
 }
 
 .schedulepage__image {
