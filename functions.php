@@ -165,7 +165,7 @@ function announcement_register_widget() {
     // widget name
     __('Add Announcement', ' announcement_widget_domain'),
     // widget description
-    array( 'description' => __( 'Drag this to the Announcement Section to the right to activate your Announcement Banner', 'announcement_widget_domain' ), )
+    array( 'description' => __( 'Drag this to the Announcement Section to the right to activate your Announcement Banner.', 'announcement_widget_domain' ), )
     );
     }
     public function widget( $args, $instance ) {
