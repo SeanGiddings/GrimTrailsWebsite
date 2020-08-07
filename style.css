@@ -307,6 +307,9 @@ body {
   padding: 30px 0;
   font-family: 'Federo', sans-serif;
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .footer__container a {
@@ -316,6 +319,10 @@ body {
 .footer__container a:hover {
   color: #f11203;
   text-decoration: none;
+}
+
+.footer__logo {
+  width: 10%;
 }
 
 .covid__container {
