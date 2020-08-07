@@ -551,3 +551,13 @@ body {
     display: none;
   }
 }
+
+.announcement__container {
+  max-width: 1280px;
+    background: red;
+    text-align: center;
+    color: black;
+    font-size: 50px;
+    padding: 30px;
+    margin: 0 auto;
+}

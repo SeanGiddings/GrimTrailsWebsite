@@ -72,13 +72,13 @@
         </a>
       </div>
 
-      <!--Announcements Section-->
-      <!--
-        <div class="Announcement__container">
-        <div class="Announcement Text">
-          Unfortunately, Grim Trails has been rained out.
-        </div>
-      </div>
-      -->
+      <?php do_action('announcements_section'); ?>
+
+      <?php if ( is_active_sidebar( 'announcement__section' ) ) : ?>
+	<div id="primary-sidebar" class="primary-sidebar widget-area" role="complementary">
+		<?php dynamic_sidebar( 'announcement__section' ); ?>
+	</div><!-- #primary-sidebar -->
+<?php endif; ?>
+
     </header>
     <div id="container">
