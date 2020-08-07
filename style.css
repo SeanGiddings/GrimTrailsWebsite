@@ -165,7 +165,7 @@ body {
   font-family: "edo_szregular", sans-serif;
 }
 
-.body__wrapper, .header__container, .footer__container {
+.body__wrapper, .header__container, .covid__container, .footer__container {
   background-color: rgba(0, 0, 0, 0.8);
   max-width: 1280px;
   margin: 0 auto;
@@ -312,11 +312,11 @@ body {
   justify-content: space-between;
 }
 
-.footer__container a {
+.footer__container a, .covid__container a {
   color: #f11203;
 }
 
-.footer__container a:hover {
+.footer__container a:hover, .covid__container a:hover {
   color: #f11203;
   text-decoration: none;
 }
@@ -328,7 +328,7 @@ body {
 .covid__container {
   padding: 20px 20px 30px;
   background: #000;
-  margin-bottom: 20px;
+  text-align: center;
 }
 
 .covid__title {
@@ -492,6 +492,7 @@ body {
 
 .awards__images {
   text-align: center;
+  margin-bottom: 20px;
 }
 
 .schedulepage__container {

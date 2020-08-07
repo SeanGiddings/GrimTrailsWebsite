@@ -2,8 +2,6 @@
 <footer id="footer">
   <!--Footer-->
 
-  <div class="footer__container">
-
   <div class="covid__container">
     <h2 class="covid__title">
       IMPORTANT COVID-19 MESSAGE
@@ -12,6 +10,15 @@
       Due to Covid-19, we are taking extra precautions in the preparation and organization of the Haunt. Please see our <a href="/faq">FAQ</a> for more information.
     </p>
   </div>
+  <div class="footer__container">
+  <img
+        id="footerlogo"
+        class="footer__logo"
+        src="<?php echo get_stylesheet_directory_uri(); ?>/images/footerlogo.png"
+        alt="Grim Trails Haunted House Logo"
+        aria-label="Grim Trails Haunted House Logo"
+      />
+      <div class="footer__info">
     <div class="footer__addressline">
       <div class="footer__address">
         <a href="https://www.google.com/maps/place/Grim+Trails+Haunted+Attraction,+12009+Rehl+Rd,+Louisville,+KY+40299/@38.2008512,-85.5336743,15z/data=!4m2!3m1!1s0x8869a190dd2db409:0x2a883abdca7cee7c" target="_blank">
@@ -39,6 +46,14 @@
       Louisville Kentucky's Scariest Haunted Attractions © 2020 • All rights
       reserved.
     </div>
+</div>
+    <img
+        id="footerlogo"
+        class="footer__logo"
+        src="<?php echo get_stylesheet_directory_uri(); ?>/images/footerlogo.png"
+        alt="Grim Trails Haunted House Logo"
+        aria-label="Grim Trails Haunted House Logo"
+      />
     <!--
     <div class="footer__subnav">
       <a href="#">
