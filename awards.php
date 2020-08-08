@@ -19,7 +19,7 @@
 
     <div class="tertpage__text">
       <p>
-        For reviews, check out our <a href="https://www.facebook.com/pg/GrimTrails/reviews/?ref=page_internal" target="_blank">Facebook page! </a>
+        For more reviews, check out our <a href="https://www.facebook.com/pg/GrimTrails/reviews/?ref=page_internal" target="_blank">Facebook page! </a>
       </p>
     </div>
 

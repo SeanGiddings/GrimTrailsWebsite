@@ -440,6 +440,13 @@ body {
 
 /*** FAQ ***/
 
+.tickets__instruction {
+  font-size: 30px;
+  padding-bottom: 30px;
+  font-family: 'Federo', sans-serif;
+  text-align: center;
+}
+
 .faq__question {
   color: #f11203;
   font-size: 30px;

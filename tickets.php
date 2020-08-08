@@ -34,7 +34,7 @@
             <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
             </form>
         </div>
-        <div class="tertpage__text">
+        <div class="tickets__instruction">
           <p>Print out the paypal invoice and present it to the ticket handler.</p>
         </div>
 
