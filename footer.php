@@ -7,7 +7,7 @@
       IMPORTANT COVID-19 MESSAGE
     </h2>
     <p class="covid__text">
-      Due to Covid-19, we are taking extra precautions in the preparation and organization of the Haunt. Please see our <a href="/faq">FAQ</a> for more information.
+      Our entirely outdoor event will safely open this year. Due to Covid-19, we are taking extra precautions in the preparation and organization of the Haunt. Please see our <a href="/faq">FAQ</a> for more information.
     </p>
   </div>
   <div class="footer__container">
@@ -30,16 +30,16 @@
           502-594-7624
         </a>
       </div>
-      <div class="footer__socialmedia">
-        <a href="https://www.facebook.com/GrimTrails/" target="_blank">
-          <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/social_facebook.png" alt="facebook icon" class="footer__facebook socialmedia__icon" /></a>
-        <a href="https://twitter.com/grimtrails?lang=en" target="_blank">
-          <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/social_twitter.png" alt="twitter icon" class="footer__twitter socialmedia__icon" />
-        </a>
-        <a href="https://www.youtube.com/channel/UCiBMbJ1NF6Kax5rUuvlSY3g" target="_blank">
-          <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/social_youtube.png" alt="youtube icon" class="footer__youtube socialmedia__icon" />
-        </a>
-      </div>
+      <div class="header__socialmedia">
+            <a href="https://www.facebook.com/GrimTrails/" target="_blank">
+              <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/social_facebook.png" alt="facebook icon" class="footer__facebook socialmedia__icon" /></a>
+            <a href="https://www.youtube.com/channel/UCiBMbJ1NF6Kax5rUuvlSY3g" target="_blank">
+              <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/social_youtube.png" alt="youtube icon" class="footer__youtube socialmedia__icon" />
+            </a>
+            <a href="https://www.instagram.com/grimtrails/?hl=en" target="_blank">
+              <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/social_insta.png" alt="twitter icon" class="footer__twitter socialmedia__icon" />
+            </a>
+          </div>
     </div>
     <div class="footer__disclaimer">
       All content copyright Grim Trails Haunted House and Attractions |

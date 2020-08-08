@@ -53,11 +53,11 @@
           <div class="header__socialmedia">
             <a href="https://www.facebook.com/GrimTrails/" target="_blank">
               <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/social_facebook.png" alt="facebook icon" class="footer__facebook socialmedia__icon" /></a>
-            <a href="https://twitter.com/grimtrails?lang=en" target="_blank">
-              <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/social_twitter.png" alt="twitter icon" class="footer__twitter socialmedia__icon" />
-            </a>
             <a href="https://www.youtube.com/channel/UCiBMbJ1NF6Kax5rUuvlSY3g" target="_blank">
               <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/social_youtube.png" alt="youtube icon" class="footer__youtube socialmedia__icon" />
+            </a>
+            <a href="https://www.instagram.com/grimtrails/?hl=en" target="_blank">
+              <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/social_insta.png" alt="twitter icon" class="footer__twitter socialmedia__icon" />
             </a>
           </div>
         </nav>

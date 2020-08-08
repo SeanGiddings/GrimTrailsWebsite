@@ -22,6 +22,8 @@
         <h1>
           Grim Trails Haunted Attraction plunges you deep into the dark,
           twisted, and spooky world of fairy-tales and folklore.
+          <br><br>
+          Over 92,000 square feet of outdoor terror!
         </h1>
       </div>
       <div class="description__text">

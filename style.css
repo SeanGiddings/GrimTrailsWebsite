@@ -194,6 +194,11 @@ body {
   font-size: 1.5rem;
 }
 
+.socialmedia__icon {
+  max-width: 28px;
+  border-radius: 5px;
+}
+
 .tickets-button a {
   color: #f11203;
   text-align: center;
@@ -340,6 +345,12 @@ body {
 .covid__text {
   font-size: 25px;
   margin-top: 20px;
+}
+
+.covid__image {
+  margin: 0 auto;
+  display: block;
+  max-width: 1000px;
 }
 
 .footer__addressline {

@@ -25,6 +25,8 @@
           </p>
         </div>
 
+        <img id="covid" class="covid__image img-fluid" src="<?php echo get_stylesheet_directory_uri(); ?>/images/covid.jpg" alt="Special COVID rules image" aria-label="COVID rules image" />
+          
         <!--Map-->
         <div class="faq__container">
           <h2 class="faq__question">
