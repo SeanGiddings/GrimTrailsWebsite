@@ -350,7 +350,7 @@ body {
 .covid__image {
   margin: 0 auto;
   display: block;
-  max-width: 1000px;
+  width: 1000px;
 }
 
 .footer__addressline {
@@ -379,6 +379,10 @@ body {
   .tickets-button a {
     font-size: 40px;
   }
+
+  .footer__container {
+    display: block;
+  }
   .footer__addressline {
     display: block;
     text-align: center;
@@ -386,6 +390,12 @@ body {
   }
   .footer__phone {
     padding: 15px;
+  }
+  .footer__logoleft {
+    display: none;
+  }
+  .footer__logoright {
+    width: 30%;
   }
 }
 
