@@ -12,8 +12,8 @@
   </div>
   <div class="footer__container">
   <img
-        id="footerlogo"
-        class="footer__logo"
+        id="footerlogo1"
+        class="footer__logo footer__logoleft"
         src="<?php echo get_stylesheet_directory_uri(); ?>/images/footerlogo.png"
         alt="Grim Trails Haunted House Logo"
         aria-label="Grim Trails Haunted House Logo"
@@ -30,7 +30,7 @@
           502-594-7624
         </a>
       </div>
-      <div class="header__socialmedia">
+      <div class="footer__socialmedia">
             <a href="https://www.facebook.com/GrimTrails/" target="_blank">
               <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/social_facebook.png" alt="facebook icon" class="footer__facebook socialmedia__icon" /></a>
             <a href="https://www.youtube.com/channel/UCiBMbJ1NF6Kax5rUuvlSY3g" target="_blank">
@@ -48,8 +48,8 @@
     </div>
 </div>
     <img
-        id="footerlogo"
-        class="footer__logo"
+        id="footerlogo2"
+        class="footer__logo footer__logoright"
         src="<?php echo get_stylesheet_directory_uri(); ?>/images/footerlogo.png"
         alt="Grim Trails Haunted House Logo"
         aria-label="Grim Trails Haunted House Logo"
