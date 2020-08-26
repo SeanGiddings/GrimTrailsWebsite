@@ -167,7 +167,7 @@ body {
 
 .body__wrapper, .header__container, .covid__container, .footer__container {
   background-color: rgba(0, 0, 0, 0.8);
-  max-width: 1280px;
+  max-width: 1400px;
   margin: 0 auto;
   padding: 5px 20px 0;
 }
@@ -581,11 +581,57 @@ body {
 }
 
 .announcement__container {
-  max-width: 1280px;
+  max-width: 1400px;
     background: red;
     text-align: center;
     color: black;
     font-size: 50px;
     padding: 30px;
     margin: 0 auto;
+}
+
+/*** Product Card ***/
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.product__title, .product__price, .product__description {
+  font-family: 'Federo', sans-serif;
+}
+
+.product__title {
+  color: rgb(27, 26, 26);
+  font-size: 30px;
+}
+
+.product__price {
+  color: grey;
+  font-size: 22px;
+}
+
+.product__description {
+  color: black;
+  font-size: 15px;
+  padding: 10px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
 }
