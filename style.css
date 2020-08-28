@@ -277,7 +277,7 @@ body {
 
 .schedule__container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .schedule__column {
@@ -597,25 +597,22 @@ body {
   max-width: 300px;
   margin: auto;
   text-align: center;
-  font-family: arial;
-}
-
-.product__title, .product__price, .product__description {
   font-family: 'Federo', sans-serif;
+  background: rgba(0, 0, 0, 0.5);
 }
 
 .product__title {
-  color: rgb(27, 26, 26);
+  color: #fff;
   font-size: 30px;
 }
 
 .product__price {
-  color: grey;
+  color: #fff;
   font-size: 22px;
 }
 
 .product__description {
-  color: black;
+  color: #fff;
   font-size: 15px;
   padding: 10px;
 }
@@ -625,7 +622,7 @@ body {
   outline: 0;
   padding: 12px;
   color: white;
-  background-color: #000;
+  background-color: #f11203;
   text-align: center;
   cursor: pointer;
   width: 100%;

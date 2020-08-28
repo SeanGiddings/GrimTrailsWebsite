@@ -40,7 +40,7 @@
     <!--Event Schedule Blocks-->
     <div class="schedule__container">
       <div class="schedule__column schedule__mobile">
-        <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/calendar.png" class="schedule__image img-fluid" />
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/calendar2020.png" class="schedule__image img-fluid" />
       </div>
       <div class="schedule__column">
         <div class="schedule__text">
@@ -56,7 +56,7 @@
         </div>
       </div>
       <div class="schedule__column schedule__column-right">
-        <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/calendar.png" class="schedule__image img-fluid" />
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/calendar2020.png" class="schedule__image img-fluid" />
       </div>
     </div>
 

@@ -23,7 +23,7 @@
                 <h3 class="schedulepage__subtitle">Purchase tickets online 24/7!</h3>
 
                 <div class="schedulepage__image">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/calendar.png" class="schedule__image img-fluid" />
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/calendar2020.png" class="schedule__image img-fluid" />
                 </div>
                             
         </div>
