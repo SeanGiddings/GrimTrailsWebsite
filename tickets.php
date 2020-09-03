@@ -21,7 +21,7 @@
         <div class="paypal-button">
         <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
             <input type="hidden" name="cmd" value="_cart">
-            <input type="hidden" name="business" value="wacoombs@aol.com">
+            <input type="hidden" name="business" value="grimtrails01@gmail.com">
             <input type="hidden" name="lc" value="US">
             <input type="hidden" name="item_name" value="Grim Trails Admission">
             <input type="hidden" name="amount" value="20.00">
