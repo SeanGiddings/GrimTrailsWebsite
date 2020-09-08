@@ -187,7 +187,7 @@ function announcement_register_widget() {
     $title = __( 'Default Title', 'announcement_widget_domain' );
     ?>
     <p>
-    <label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php _e( 'Title:' ); ?></label>
+    <label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php _e( 'Announcement:' ); ?></label>
     <input class="widefat" id="<?php echo $this->get_field_id( 'title' ); ?>" name="<?php echo $this->get_field_name( 'title' ); ?>" type="text" value="<?php echo esc_attr( $title ); ?>" />
     </p>
     <?php
@@ -198,4 +198,99 @@ function announcement_register_widget() {
     return $instance;
     }
     }
+    
+
+    //Building a widget from scratch
+
+    /**
+ * Register our sidebars and widgetized areas.
+ *
+ */
+function product_widgets_init() {
+
+	register_sidebar( array(
+		'name'          => 'Product',
+		'id'            => 'product__section',
+		'before_widget' => '<div class="product__container">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<div class="product__text">',
+		'after_title'   => '</h2>',
+	) );
+
+}
+add_action( 'widgets_init', 'product_widgets_init' );
+
+/**
+ * Product Widget
+ *
+ */
+
+function product_register_widget() {
+    register_widget( 'product_widget' );
+    }
+    add_action( 'widgets_init', 'product_register_widget' );
+    class product_widget extends WP_Widget {
+    function __construct() {
+    parent::__construct(
+    // widget ID
+    'product_widget',
+    // widget name
+    __('Product', ' product_widget_domain'),
+    // widget description
+    array( 'description' => __( 'Drag this to the Product Section to the right to activate your Product Banner.', 'product_widget_domain' ), )
+    );
+    }
+    public function widget( $args, $instance ) {
+    $title = apply_filters( 'widget_title', $instance['title'] );
+    echo $args['before_widget'];
+    //if title is present
+    if ( ! empty( $title ) )
+    echo $args['before_title'] . $title . $args['after_title'];
+    //output
+    /*
+    echo __( 'For more Information, please see FAQ or Contact Us.', 'product_widget_domain' );
+    echo $args['after_widget'];
+    */
+    }
+    public function form( $instance ) {
+    if ( isset( $instance[ 'title' ] ) )
+    $title = $instance[ 'title' ];
+    else
+    $title = __( 'Default Title', 'product_widget_domain' );
+
+    if ( isset( $instance[ 'price' ] ) ) {
+        $name = $instance[ 'price' ];
+    }
+    else {
+        $name = __( 'Enter the Price here (19.99 for example)', 'product_widget_domain' );
+    }
+    if ( isset( $instance[ 'description' ] ) ) {
+        $name = $instance[ 'description' ];
+    }
+    else {
+        $name = __( 'Product Description', 'product_widget_domain' );
+    }
+    ?>
+    <p>
+    <label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php _e( 'Product Name:' ); ?></label>
+    <input class="widefat" id="<?php echo $this->get_field_id( 'title' ); ?>" name="<?php echo $this->get_field_name( 'title' ); ?>" type="text" value="<?php echo esc_attr( $title ); ?>" />
+    </p>
+    <p>
+                <label for="<?php echo $this->get_field_id( 'price' ); ?>"><?php _e( 'Price (19.99 for example):' ); ?></label>
+                <input class="widefat" id="<?php echo $this->get_field_id( 'price' ); ?>" name="<?php echo $this->get_field_name( 'price' ); ?>" type="text" value="<?php echo esc_attr( $price ); ?>" />
+            </p>
+            <p>
+                <label for="<?php echo $this->get_field_id( 'description' ); ?>"><?php _e( 'Product Description:' ); ?></label>
+                <input class="widefat" id="<?php echo $this->get_field_id( 'description' ); ?>" name="<?php echo $this->get_field_name( 'description' ); ?>" type="text" value="<?php echo esc_attr( $description ); ?>" />
+            </p>
+    <?php
+    }
+    public function update( $new_instance, $old_instance ) {
+    $instance = array();
+    $instance['title'] = ( ! empty( $new_instance['title'] ) ) ? strip_tags( $new_instance['title'] ) : '';
+    $instance['price'] = ( ! empty( $new_instance['price'] ) ) ? strip_tags( $new_instance['price'] ) : '';
+    $instance['description'] = ( ! empty( $new_instance['description'] ) ) ? strip_tags( $new_instance['description'] ) : '';
+    return $instance;
+    }
+}
     
