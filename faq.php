@@ -25,7 +25,7 @@
           </p>
         </div>
 
-        <img id="covid" class="covid__image img-fluid" src="<?php echo get_stylesheet_directory_uri(); ?>/images/covid.jpg" alt="Special COVID rules image" aria-label="COVID rules image" />
+        <!--<img id="covid" class="covid__image img-fluid" src="<?php echo get_stylesheet_directory_uri(); ?>/images/covid.jpg" alt="Special COVID rules image" aria-label="COVID rules image" />-->
           
         <!--Map-->
         <div class="faq__container">
@@ -103,6 +103,13 @@
           </h2>
           <p class="faq__answer">
             Yes. We use strobe lights, fog, snow and laser machines.
+          </p>
+
+          <h2 class="faq__question">
+            Should I wear sandals?
+          </h2>
+          <p class="faq__answer">
+            Grim Trails is an outdoor haunt, so closed-toed shoes are recommended. You might encounter roots, rocks, or muddy conditions!
           </p>
         </div>
         <div class="disclaimer__container">
