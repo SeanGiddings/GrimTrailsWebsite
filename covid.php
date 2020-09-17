@@ -23,7 +23,7 @@
           </p>
         </div>
 
-        <img id="covid" class="covid__image img-fluid" src="<?php echo get_stylesheet_directory_uri(); ?>/images/covid.jpg" alt="Special COVID rules image" aria-label="COVID rules image" />
+        <img id="covid" class="covid__image img-fluid pb-3" src="<?php echo get_stylesheet_directory_uri(); ?>/images/covid.jpg" alt="Special COVID rules image" aria-label="COVID rules image" />
           
 </div>
 
