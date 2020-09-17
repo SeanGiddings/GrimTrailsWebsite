@@ -7,7 +7,7 @@
       IMPORTANT COVID-19 MESSAGE
     </h2>
     <p class="covid__text">
-      Our entirely outdoor event will safely open this year. Due to Covid-19, we are taking extra precautions in the preparation and organization of the Haunt. Please see our <a href="/faq">FAQ</a> for more information.
+      Our entirely outdoor event will safely open this year. Due to Covid-19, we are taking extra precautions in the preparation and organization of the Haunt. Please see our <a href="/covid">Covid-19 page</a> for more information.
     </p>
   </div>
   <div class="footer__container">
