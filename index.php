@@ -46,7 +46,7 @@
         <div class="schedule__text">
           <div class="schedule__subtitle">2020 EVENT SCHEDULE</div>
           Open Dusk to 12:30AM <br />Fridays and Saturdays starting on
-          September 26th
+          October 2nd
         </div>
         <div class="tickets-button">
           <a href="/tickets">Buy Tickets Online</a>
