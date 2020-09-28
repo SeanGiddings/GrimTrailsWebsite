@@ -62,7 +62,7 @@
             Does your haunted house have security?
           </h2>
           <p class="faq__answer">
-            Yes! We value the safety of our staff and guests. We have LMPD
+            Yes! We utilize a metal detector for the safety of our staff and guests. Also, we have LMPD
             officers present at all times when the attraction is open.
           </p>
 
