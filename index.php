@@ -47,7 +47,9 @@
           <div class="schedule__subtitle">2020 EVENT SCHEDULE</div>
           Open Dusk to 12:30AM <br />Fridays and Saturdays starting on
           October 2nd
+          <p>Tickets are <span>$20.00</span> per person.</p>
         </div>
+        
         <div class="tickets-button">
           <a href="/tickets">Buy Tickets Online</a>
         </div>

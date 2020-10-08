@@ -317,7 +317,7 @@ body {
   justify-content: space-between;
 }
 
-.footer__container a, .covid__container a {
+.footer__container a, .covid__container a, span {
   color: #f11203;
 }
 

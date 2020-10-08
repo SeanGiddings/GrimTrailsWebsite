@@ -15,6 +15,8 @@
 
         <div class="tertpage__text">
           <p>Tickets can be purchased at the gate or online using paypal</p>
+          <br>
+          <p>Tickets are <span>$20.00</span> per person.</p>
 
         <p><br>Still have questions?  Please refer to our F.A.Q.</p>
         </div>
