@@ -2,15 +2,19 @@
 
 <?php get_header(); ?>
 
-<?php do_action('announcements_section'); ?>
 
-<?php if ( is_active_sidebar( 'announcement__section' ) ) : ?>
+
+<div class="body__wrapper">
+
+<?php do_action('product_section'); ?>
+
+<?php if ( is_active_sidebar( 'product__section' ) ) : ?>
 <div id="primary-sidebar" class="primary-sidebar widget-area" role="complementary">
-  <?php dynamic_sidebar( 'announcement__section' ); ?>
+  <?php dynamic_sidebar( 'product__section' ); ?>
 </div><!-- #primary-sidebar -->
 <?php endif; ?>
 
-<div class="body__wrapper">
+<!--
     <div class="container">
         <div class="row">
             <div class="card col-lg-4">
@@ -56,6 +60,7 @@
             <p><button>Add to Cart</button></p>
         </div>
     </div>
+                -->
 </div>
 
 
