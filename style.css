@@ -632,3 +632,61 @@ body {
 .card button:hover {
   opacity: 0.7;
 }
+
+
+
+/***** Blog Customization *****/
+
+#container {
+  background-color: rgba(0, 0, 0, 0.8);
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 5px 20px 0;
+}
+
+/* Remove meta data */
+.entry-meta { display: none; }
+
+.entry-title {
+  font-size: 70px;
+  margin: 30px 0;
+  text-align: center;
+  padding-bottom: 30px;
+  border-bottom: solid 2px #333;
+}
+
+.entry-title a{
+  color: #fff;
+}
+.entry-title a:hover{
+  text-decoration: none;
+}
+
+.entry-content {
+  font-size: 22px;
+  font-family: 'Federo', sans-serif;
+}
+
+.entry-content a {
+  color: #f11203;
+}
+
+.entry-content p {
+  margin: 20px;
+}
+
+#sidebar, .entry-footer {
+  margin-top: 30px;
+}
+
+.widget-title{
+  font-size: 50px;
+  max-width: 689px;
+  border-bottom: 2px solid #fff;
+  margin-bottom: 20px;
+}
+
+.widget_recent_entries ul {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
