@@ -142,17 +142,6 @@ function additional_custom_scripts()
 }
 add_action('wp_enqueue_scripts', 'additional_custom_scripts');
 
-
-/*Rename Recent Posts on blog*/
-function my_widget_title($title, $instance, $id_base) {
-    if ( 'recent-posts' == $id_base) {
-       return __('Check out Some Other Stories!');
-     }  
-     else {
-       return $title;
-     }  
-}
-
 /**
  * Register our sidebars and widgetized areas.
  *
@@ -233,10 +222,7 @@ class announcement_widget extends WP_Widget
     }
 }
 
-
-
-
-add_filter ( 'widget_title' , 'my_widget_title', 10, 3); 
+/*add_filter ( 'widget_title' , 'my_widget_title', 10, 3); */
 
 
 //Building a widget from scratch
