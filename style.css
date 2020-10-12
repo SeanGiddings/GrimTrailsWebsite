@@ -591,6 +591,17 @@ body {
 }
 
 /*** Product Card ***/
+.card__container {  
+    display: flex;
+    justify-content: space-around;
+    border: 2px solid #555;
+    max-width: 75%;
+    margin: 0 auto;
+}
+
+.card__info {
+  padding: 35px;
+}
 
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -599,6 +610,11 @@ body {
   text-align: center;
   font-family: 'Federo', sans-serif;
   background: rgba(0, 0, 0, 0.5);
+}
+
+.card__image {
+  padding: 20px;
+  filter: drop-shadow(2px 4px 6px white);
 }
 
 .product__title {
