@@ -645,7 +645,7 @@ body {
 }
 
 /* Remove meta data */
-.entry-meta { display: none; }
+/*.entry-meta { display: none; }*/
 
 .entry-title {
   font-size: 70px;
