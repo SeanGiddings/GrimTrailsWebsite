@@ -1,6 +1,4 @@
 <?php get_header(); ?>
-<div class="blog__container">
-
 <main id="content">
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -17,6 +15,4 @@
 <?php endwhile; endif; ?>
 </main>
 <?php get_sidebar(); ?>
-</div>
-
 <?php get_footer(); ?>
