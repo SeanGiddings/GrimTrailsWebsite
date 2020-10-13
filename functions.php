@@ -146,7 +146,7 @@ add_action('wp_enqueue_scripts', 'additional_custom_scripts');
  * Register our sidebars and widgetized areas.
  *
  */
-function arphabet_widgets_init()
+function announcement_widgets_init()
 {
 
     register_sidebar(array(
@@ -159,7 +159,7 @@ function arphabet_widgets_init()
     ));
 
 }
-add_action('widgets_init', 'arphabet_widgets_init');
+add_action('widgets_init', 'announcement_widgets_init');
 
 /**
  * Announcement Widget
