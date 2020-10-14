@@ -274,9 +274,9 @@ class product_widget extends WP_Widget
         add_action('admin_enqueue_scripts', array($this, 'scripts'));
       
         parent::__construct(
-           'our_widget', // Base ID
-           __( 'Our Widget Title', 'text_domain' ), // Name
-           array( 'description' => __( 'Our Widget with media files', 'text_domain' ), ) // Args
+           'product_widget', // Base ID
+           __( 'Add Product', 'text_domain' ), // Name
+           array( 'description' => __( 'Drag this to the Store Section to the right to build your product card.', 'text_domain' ), ) // Args
         );
      }
     public function widget( $args, $instance ) {
@@ -300,13 +300,23 @@ class product_widget extends WP_Widget
         ob_end_flush();
      }
      public function form( $instance ) {
-        $title = ! empty( $instance['title'] ) ? $instance['title'] : __( 'New title', 'text_domain' );
+        $title = ! empty( $instance['title'] ) ? $instance['title'] : __( 'Product Name', 'text_domain' );
         $image = ! empty( $instance['image'] ) ? $instance['image'] : '';
+        $price = ! empty( $instance['price'] ) ? $instance['price'] : __( 'Enter the Price here (19.99 for example)', 'text_domain' );
+        $description = ! empty( $instance['description'] ) ? $instance['description'] : __( 'Product Description', 'text_domain' );
         ?>
         <p>
            <label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php _e( 'Title:' ); ?></label>
            <input class="widefat" id="<?php echo $this->get_field_id( 'title' ); ?>" name="<?php echo $this->get_field_name( 'title' ); ?>" type="text" value="<?php echo esc_attr( $title ); ?>">
         </p>
+        <p>
+        <label for="<?php echo $this->get_field_id('price'); ?>"><?php _e('Price (19.99 for example):');?></label>
+        <input class="widefat" id="<?php echo $this->get_field_id('price'); ?>" name="<?php echo $this->get_field_name('price'); ?>" type="text" value="<?php echo esc_attr($price); ?>" />
+    </p>
+    <p>
+        <label for="<?php echo $this->get_field_id('description'); ?>"><?php _e('Product Description:');?></label>
+        <input class="widefat" id="<?php echo $this->get_field_id('description'); ?>" name="<?php echo $this->get_field_name('description'); ?>" type="text" value="<?php echo esc_attr($description); ?>" />
+    </p>
         <p>
            <label for="<?php echo $this->get_field_id( 'image' ); ?>"><?php _e( 'Image:' ); ?></label>
            <input class="widefat" id="<?php echo $this->get_field_id( 'image' ); ?>" name="<?php echo $this->get_field_name( 'image' ); ?>" type="text" value="<?php echo esc_url( $image ); ?>" />
@@ -318,7 +328,8 @@ class product_widget extends WP_Widget
         $instance = array();
         $instance['title'] = ( ! empty( $new_instance['title'] ) ) ? strip_tags( $new_instance['title'] ) : '';
         $instance['image'] = ( ! empty( $new_instance['image'] ) ) ? $new_instance['image'] : '';
-      
+        $instance['price'] = htmlentities($new_instance['price']);
+        $instance['description'] = (!empty($new_instance['description'])) ? strip_tags($new_instance['description']) : '';
         return $instance;
      }
      public function scripts()
