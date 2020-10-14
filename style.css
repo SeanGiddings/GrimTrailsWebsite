@@ -595,21 +595,16 @@ body {
     display: flex;
     justify-content: space-around;
     border: 2px solid #555;
-    max-width: 75%;
+    max-width: 85%;
     margin: 0 auto;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(45,45,45,1) 23%, rgba(57,57,57,1) 78%, rgba(0,0,0,1) 100%);
+  border-radius: 5px;
+  padding-bottom: 20px;
 }
 
 .card__info {
   padding: 35px;
-}
-
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 300px;
-  margin: auto;
-  text-align: center;
-  font-family: 'Federo', sans-serif;
-  background: rgba(0, 0, 0, 0.5);
 }
 
 .card__image {
