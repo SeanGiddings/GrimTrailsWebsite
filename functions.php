@@ -246,7 +246,7 @@ function product_widgets_init()
     register_sidebar(array(
         'name' => 'Store',
         'id' => 'product__section',
-        'before_widget' => '<div class="product__container">',
+        'before_widget' => '<div class="card__container col-lg-12">',
         'after_widget' => '</div>',
         'before_title' => '<div class="product__text">',
         'after_title' => '</div>',
@@ -283,7 +283,9 @@ class product_widget extends WP_Widget
         // Our variables from the widget settings
         $title = apply_filters( 'widget_title', empty( $instance['title'] ) ? __( 'Default title', 'text_domain' ) : $instance['title'] );
         $image = ! empty( $instance['image'] ) ? $instance['image'] : '';
-      
+        $description = ! empty( $instance['description'] ) ? $instance['description'] : '';
+        $price = ! empty( $instance['price'] ) ? $instance['price'] : '';
+
         ob_start();
         echo $args['before_widget'];
         if ( ! empty( $instance['title'] ) ) {
@@ -293,6 +295,31 @@ class product_widget extends WP_Widget
       
         <?php if($image): ?>
            <img src="<?php echo esc_url($image); ?>" alt="">
+        <?php endif; ?>
+
+        <?php if($price): ?>
+           <h2><?php echo $price ?></h2>
+        <?php endif; ?>
+
+        <?php if($description): ?>
+           <h2><?php echo $description ?></h2>
+        <?php endif; ?>
+
+        <?php if($price): ?>
+            <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                    <input type="hidden" name="cmd" value="_cart">
+                    <input type="hidden" name="business" value="grimtrails01@gmail.com">
+                    <input type="hidden" name="lc" value="US">
+                    <input type="hidden" name="item_name" value="<?php echo $title ?>">
+                    <input type="hidden" name="amount" value="<?php echo $price ?>">
+                    <input type="hidden" name="currency_code" value="USD">
+                    <input type="hidden" name="button_subtype" value="products">
+                    <input type="hidden" name="no_note" value="0">
+                    <input type="hidden" name="add" value="1">
+                    <input type="hidden" name="bn" value="PP-ShopCartBF:btn_cart_LG.gif:NonHostedGuest">
+                    <input type="image" src="<?php echo get_stylesheet_directory_uri(); ?>/images/paypalcheckout-60px.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                    <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                </form>
         <?php endif; ?>
       
         <?php
