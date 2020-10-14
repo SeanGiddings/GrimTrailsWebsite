@@ -231,8 +231,6 @@ class announcement_widget extends WP_Widget
 
 
 
-
-
 /**
  * CUSTOM PRODUCT WIDGET
  *
@@ -270,73 +268,63 @@ add_action('widgets_init', 'product_register_widget');
 
 class product_widget extends WP_Widget
 {
-    public function __construct()
-    {
+    function __construct() {
+ 
+        // Add Widget scripts
+        add_action('admin_enqueue_scripts', array($this, 'scripts'));
+      
         parent::__construct(
-            // widget ID
-            'product_widget',
-            // widget name
-            __('Add Product', ' product_widget_domain'),
-            // widget description
-            array('description' => __('Drag this to the Store Section to the right to build your product card.', 'product_widget_domain'))
+           'our_widget', // Base ID
+           __( 'Our Widget Title', 'text_domain' ), // Name
+           array( 'description' => __( 'Our Widget with media files', 'text_domain' ), ) // Args
         );
-
-        
-    }
-    public function widget($args, $instance)
-    {
-        $title = apply_filters('widget_title', $instance['title']);
+     }
+    public function widget( $args, $instance ) {
+        // Our variables from the widget settings
+        $title = apply_filters( 'widget_title', empty( $instance['title'] ) ? __( 'Default title', 'text_domain' ) : $instance['title'] );
+        $image = ! empty( $instance['image'] ) ? $instance['image'] : '';
+      
+        ob_start();
         echo $args['before_widget'];
-        //if title is present
-        if (!empty($title)) {
-            echo $args['before_title'] . $title . $args['after_title'];
-        }
-
-        //output
-        /*
-    echo __( 'For more Information, please see FAQ or Contact Us.', 'product_widget_domain' );
-    echo $args['after_widget'];
-     */
-    }
-    public function form($instance)
-    {
-        if (isset($instance['title'])) {
-            $title = $instance['title'];
-        } else {
-            $title = __('Default Title', 'product_widget_domain');
-        }
-
-        if (isset($instance['price'])) {
-            $price = $instance['price'];
-        } else {
-            $price = __('Enter the Price here (19.99 for example)', 'product_widget_domain');
-        }
-        if (isset($instance['description'])) {
-            $description = $instance['description'];
-        } else {
-            $description = __('Product Description', 'product_widget_domain');
+        if ( ! empty( $instance['title'] ) ) {
+           echo $args['before_title'] . $title . $args['after_title'];
         }
         ?>
-    <p>
-        <label for="<?php echo $this->get_field_id('title'); ?>"><?php _e('Product Name:');?></label>
-        <input class="widefat" id="<?php echo $this->get_field_id('title'); ?>" name="<?php echo $this->get_field_name('title'); ?>" type="text" value="<?php echo esc_attr($title); ?>" />
-    </p>
-    <p>
-        <label for="<?php echo $this->get_field_id('price'); ?>"><?php _e('Price (19.99 for example):');?></label>
-        <input class="widefat" id="<?php echo $this->get_field_id('price'); ?>" name="<?php echo $this->get_field_name('price'); ?>" type="text" value="<?php echo esc_attr($price); ?>" />
-    </p>
-    <p>
-        <label for="<?php echo $this->get_field_id('description'); ?>"><?php _e('Product Description:');?></label>
-        <input class="widefat" id="<?php echo $this->get_field_id('description'); ?>" name="<?php echo $this->get_field_name('description'); ?>" type="text" value="<?php echo esc_attr($description); ?>" />
-    </p>
-    <?php
-}
-    public function update($new_instance, $old_instance)
-    {
+      
+        <?php if($image): ?>
+           <img src="<?php echo esc_url($image); ?>" alt="">
+        <?php endif; ?>
+      
+        <?php
+        echo $args['after_widget'];
+        ob_end_flush();
+     }
+     public function form( $instance ) {
+        $title = ! empty( $instance['title'] ) ? $instance['title'] : __( 'New title', 'text_domain' );
+        $image = ! empty( $instance['image'] ) ? $instance['image'] : '';
+        ?>
+        <p>
+           <label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php _e( 'Title:' ); ?></label>
+           <input class="widefat" id="<?php echo $this->get_field_id( 'title' ); ?>" name="<?php echo $this->get_field_name( 'title' ); ?>" type="text" value="<?php echo esc_attr( $title ); ?>">
+        </p>
+        <p>
+           <label for="<?php echo $this->get_field_id( 'image' ); ?>"><?php _e( 'Image:' ); ?></label>
+           <input class="widefat" id="<?php echo $this->get_field_id( 'image' ); ?>" name="<?php echo $this->get_field_name( 'image' ); ?>" type="text" value="<?php echo esc_url( $image ); ?>" />
+           <button class="upload_image_button button button-primary">Upload Image</button>
+        </p>
+        <?php
+     }
+     public function update( $new_instance, $old_instance ) {
         $instance = array();
-        $instance['title'] = (!empty($new_instance['title'])) ? strip_tags($new_instance['title']) : '';
-        $instance['price'] = htmlentities($new_instance['price']);
-        $instance['description'] = (!empty($new_instance['description'])) ? strip_tags($new_instance['description']) : '';
+        $instance['title'] = ( ! empty( $new_instance['title'] ) ) ? strip_tags( $new_instance['title'] ) : '';
+        $instance['image'] = ( ! empty( $new_instance['image'] ) ) ? $new_instance['image'] : '';
+      
         return $instance;
-    }
+     }
+     public function scripts()
+{
+   wp_enqueue_script( 'media-upload' );
+   wp_enqueue_media();
+   wp_enqueue_script('our_admin', get_template_directory_uri() . '/js/image-loader.js', array('jquery'));
+}
 }
