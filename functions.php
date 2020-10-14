@@ -143,6 +143,11 @@ function additional_custom_scripts()
 add_action('wp_enqueue_scripts', 'additional_custom_scripts');
 
 /**
+ * CUSTOM ANNOUNCEMENT WIDGET
+ *
+ */
+
+/**
  * Register our sidebars and widgetized areas.
  *
  */
@@ -155,14 +160,14 @@ function announcement_widgets_init()
         'before_widget' => '<div class="announcement__container">',
         'after_widget' => '</div>',
         'before_title' => '<div class="announcement__text">',
-        'after_title' => '</h2>',
+        'after_title' => '</div>',
     ));
-
+    
 }
 add_action('widgets_init', 'announcement_widgets_init');
 
 /**
- * Announcement Widget
+ * Add Announcement Widget
  *
  */
 
@@ -171,6 +176,7 @@ function announcement_register_widget()
     register_widget('announcement_widget');
 }
 add_action('widgets_init', 'announcement_register_widget');
+
 class announcement_widget extends WP_Widget
 {
     public function __construct()
@@ -222,10 +228,15 @@ class announcement_widget extends WP_Widget
     }
 }
 
-/*add_filter ( 'widget_title' , 'my_widget_title', 10, 3); */
 
 
-//Building a widget from scratch
+
+
+
+/**
+ * CUSTOM PRODUCT WIDGET
+ *
+ */
 
 /**
  * Register our sidebars and widgetized areas.
@@ -240,14 +251,14 @@ function product_widgets_init()
         'before_widget' => '<div class="product__container">',
         'after_widget' => '</div>',
         'before_title' => '<div class="product__text">',
-        'after_title' => '</h2>',
+        'after_title' => '</div>',
     ));
-
+    
 }
 add_action('widgets_init', 'product_widgets_init');
 
 /**
- * Product Widget
+ * Add Product Widget
  *
  */
 
@@ -256,6 +267,7 @@ function product_register_widget()
     register_widget('product_widget');
 }
 add_action('widgets_init', 'product_register_widget');
+
 class product_widget extends WP_Widget
 {
     public function __construct()
@@ -264,10 +276,12 @@ class product_widget extends WP_Widget
             // widget ID
             'product_widget',
             // widget name
-            __('Product', ' product_widget_domain'),
+            __('Add Product', ' product_widget_domain'),
             // widget description
             array('description' => __('Drag this to the Store Section to the right to build your product card.', 'product_widget_domain'))
         );
+
+        
     }
     public function widget($args, $instance)
     {
@@ -286,41 +300,41 @@ class product_widget extends WP_Widget
     }
     public function form($instance)
     {
-        if (isset($instance['producttitle'])) {
-            $title = $instance['producttitle'];
+        if (isset($instance['title'])) {
+            $title = $instance['title'];
         } else {
             $title = __('Default Title', 'product_widget_domain');
         }
 
         if (isset($instance['price'])) {
-            $name = $instance['price'];
+            $price = $instance['price'];
         } else {
-            $name = __('Enter the Price here (19.99 for example)', 'product_widget_domain');
+            $price = __('Enter the Price here (19.99 for example)', 'product_widget_domain');
         }
         if (isset($instance['description'])) {
-            $name = $instance['description'];
+            $description = $instance['description'];
         } else {
-            $name = __('Product Description', 'product_widget_domain');
+            $description = __('Product Description', 'product_widget_domain');
         }
         ?>
     <p>
-    <label for="<?php echo $this->get_field_id('producttitle'); ?>"><?php _e('Product Name:');?></label>
-    <input class="widefat" id="<?php echo $this->get_field_id('producttitle'); ?>" name="<?php echo $this->get_field_name('producttitle'); ?>" type="text" value="<?php echo esc_attr($title); ?>" />
+        <label for="<?php echo $this->get_field_id('title'); ?>"><?php _e('Product Name:');?></label>
+        <input class="widefat" id="<?php echo $this->get_field_id('title'); ?>" name="<?php echo $this->get_field_name('title'); ?>" type="text" value="<?php echo esc_attr($title); ?>" />
     </p>
     <p>
-                <label for="<?php echo $this->get_field_id('price'); ?>"><?php _e('Price (19.99 for example):');?></label>
-                <input class="widefat" id="<?php echo $this->get_field_id('price'); ?>" name="<?php echo $this->get_field_name('price'); ?>" type="text" value="<?php echo esc_attr($price); ?>" />
-            </p>
-            <p>
-                <label for="<?php echo $this->get_field_id('description'); ?>"><?php _e('Product Description:');?></label>
-                <input class="widefat" id="<?php echo $this->get_field_id('description'); ?>" name="<?php echo $this->get_field_name('description'); ?>" type="text" value="<?php echo esc_attr($description); ?>" />
-            </p>
+        <label for="<?php echo $this->get_field_id('price'); ?>"><?php _e('Price (19.99 for example):');?></label>
+        <input class="widefat" id="<?php echo $this->get_field_id('price'); ?>" name="<?php echo $this->get_field_name('price'); ?>" type="text" value="<?php echo esc_attr($price); ?>" />
+    </p>
+    <p>
+        <label for="<?php echo $this->get_field_id('description'); ?>"><?php _e('Product Description:');?></label>
+        <input class="widefat" id="<?php echo $this->get_field_id('description'); ?>" name="<?php echo $this->get_field_name('description'); ?>" type="text" value="<?php echo esc_attr($description); ?>" />
+    </p>
     <?php
 }
     public function update($new_instance, $old_instance)
     {
         $instance = array();
-        $instance['producttitle'] = (!empty($new_instance['producttitle'])) ? strip_tags($new_instance['producttitle']) : '';
+        $instance['title'] = (!empty($new_instance['title'])) ? strip_tags($new_instance['title']) : '';
         $instance['price'] = htmlentities($new_instance['price']);
         $instance['description'] = (!empty($new_instance['description'])) ? strip_tags($new_instance['description']) : '';
         return $instance;
