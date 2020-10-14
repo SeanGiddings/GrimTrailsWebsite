@@ -3,17 +3,25 @@
 <?php get_header();?>
 
 
-
 <div class="body__wrapper">
 
 <?php do_action('product_section');?>
 
+      <?php if (is_active_sidebar('product__section')): ?>
+	<div id="primary-sidebar" class="primary-sidebar widget-area" role="complementary">
+		<?php dynamic_sidebar('product__section');?>
+	</div><!-- #primary-sidebar -->
+<?php endif;?>
+<!--
 <div class="card__container col-lg-12">
         <div class="card__image"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/ProductDemo.jpg" alt="Denim Jeans"></div>
         <div class="card__info">
-                <h1 class="product__title">Tailored Jeans</h1>
+                <h1 class="product__title">Funny Hotdog Hat</h1>
                 <p class="product__price">$19.99</p>
-                <p class="product__description">Some text about the jeans..</p>
+                <p class="product__description">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                    sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
                 <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
                     <input type="hidden" name="cmd" value="_cart">
                     <input type="hidden" name="business" value="grimtrails01@gmail.com">
@@ -29,16 +37,16 @@
                     <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
                 </form>
                 </div>
-            </div>
-
-
-    <!--<div class="container">
-        <div class="row">
-            <div class="card col-lg-12">
-                <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/ProductDemo.jpg" alt="Denim Jeans" style="width:100%">
-                <h1 class="product__title">Tailored Jeans</h1>
+</div>
+<div class="card__container col-lg-12">
+        <div class="card__image"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/ProductDemo.jpg" alt="Denim Jeans"></div>
+        <div class="card__info">
+                <h1 class="product__title">Funny Hotdog Hat</h1>
                 <p class="product__price">$19.99</p>
-                <p class="product__description">Some text about the jeans..</p>
+                <p class="product__description">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                    sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
                 <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
                     <input type="hidden" name="cmd" value="_cart">
                     <input type="hidden" name="business" value="grimtrails01@gmail.com">
@@ -53,34 +61,11 @@
                     <input type="image" src="<?php echo get_stylesheet_directory_uri(); ?>/images/paypalcheckout-60px.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
                     <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
                 </form>
-            </div>
-        </div>
-        <div class="card col-lg-4">
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/ProductDemo.jpg" alt="Denim Jeans" style="width:100%">
-            <h1 class="product__title">Tailored Jeans</h1>
-            <p class="product__price">$19.99</p>
-            <p class="product__description">Some text about the jeans..</p>
-            <p><button>Add to Cart</button></p>
-        </div>
-        <div class="card col-lg-4">
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/ProductDemo.jpg" alt="Denim Jeans" style="width:100%">
-            <h1 class="product__title">Tailored Jeans</h1>
-            <p class="product__price">$19.99</p>
-            <p class="product__description">Some text about the jeans..</p>
-            <p><button>Add to Cart</button></p>
-        </div>
-        <div class="card col-lg-4">
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/ProductDemo.jpg" alt="Denim Jeans" style="width:100%">
-            <h1 class="product__title">Tailored Jeans</h1>
-            <p class="product__price">$19.99</p>
-            <p class="product__description">Some text about the jeans..</p>
-            <p><button>Add to Cart</button></p>
-        </div>-->
+                </div>
+</div>
+                
+                -->
     </div>
 
-</div>
-
-
-</div>
 
 <?php get_footer();?>
