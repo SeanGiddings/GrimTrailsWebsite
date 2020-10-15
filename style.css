@@ -593,20 +593,20 @@ body {
 /*** Product Card ***/
 
 .card__container {  
-    display: flex;
-    justify-content: space-around;
+    display: block;
     border: 2px solid #555;
-    max-width: 85%;
+    max-width: 100%;
     margin: 0 auto;
     background: rgb(0,0,0);
     background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(45,45,45,1) 23%, rgba(57,57,57,1) 78%, rgba(0,0,0,1) 100%);
   border-radius: 5px;
   padding-bottom: 20px;
   filter: drop-shadow(2px 4px 6px black);
+  margin-top: 50px;
 }
 
 .card__info {
-  padding: 35px 35px 0;
+  padding: 35px 10px 0;
 }
 
 .card__image {
@@ -615,11 +615,12 @@ body {
 }
 
 .card__image img{
-    width: 300px;
+  max-width: 100%;
+    height: auto;
     margin-top: -20px;
-    margin-left: -40px;
     border-radius: 5px;
     border: 2px solid #555;
+    background-color: #c0c0c0;
 }
 
 .product__title {
@@ -642,6 +643,10 @@ body {
   margin-bottom: 10px;
 }
 
+form input[type="image"] {
+  max-width: 100%;
+}
+
 .card button {
   border: none;
   outline: 0;
@@ -658,7 +663,32 @@ body {
   opacity: 0.7;
 }
 
+@media (min-width: 768px) {
+  .card__container {  
+    display: flex;
+    justify-content: space-around;
+    max-width: 85%;
+  margin-bottom: 50px;
+}
 
+.card__info {
+  padding: 35px 35px 0;
+}
+
+.card__image {
+  max-width: 500px;
+  filter: drop-shadow(2px 4px 6px black);
+}
+
+.card__image img{
+    max-width: 300px;
+    margin-top: -20px;
+    margin-left: -40px;
+    border-radius: 5px;
+    border: 2px solid #555;
+}
+
+}
 
 /***** Blog Customization *****/
 
