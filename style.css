@@ -308,6 +308,23 @@ body {
   margin-top: 20px;
 }
 
+.tour__info {
+  color: #f11203;
+  font-size: 35px;
+  margin-top: 20px;
+}
+
+.tour__description {
+  color: #fff;
+  font-family: 'Federo', sans-serif;
+  font-size: 25px;
+  margin-top: 10px;
+}
+
+.tour__description a {
+  color: #f11203;
+}
+
 .footer__container {
   padding: 30px 0;
   font-family: 'Federo', sans-serif;
