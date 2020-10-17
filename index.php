@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+<?php get_header();?>
 <main id="content">
 
   <div class="body__wrapper">
@@ -14,7 +14,7 @@
       <iframe width="100%" height="700" src="https://www.youtube.com/embed/cP28lbBz-3Q?autoplay=1&controls=0&playlist=cP28lbBz-3Q&showinfo=0&autohide=1&loop=1&mute=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
     </div>
-   
+
 
     <!--Haunt Description-->
     <div class="description__container">
@@ -49,7 +49,7 @@
           October 2nd
           <p>Tickets are <span>$20.00</span> per person.</p>
         </div>
-        
+
         <div class="tickets-button">
           <a href="/tickets">Buy Tickets Online</a>
         </div>
@@ -62,8 +62,19 @@
       </div>
     </div>
 
+    <!--Tour Info-->
+    <div class="tour__container">
+      <h3 class="tour__info">
+          Want to see the Haunted Trail without the scares? 
+      </h3>
+      <h4 class="tour__description">  
+          We offer behind-the-scenes tours all month.
+          Admission is $10 per person. Please call <a href="tel:502-594-7624" target="_blank">502-594-7624</a> to schedule an appointment, or for more information.
+      </h4>
+    </div>
+
     <!--Map-->
     <div class="map__container">
       <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12541.558295415894!2d-85.5336743!3d38.2008512!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2a883abdca7cee7c!2sGrim%20Trails%20Haunted%20Attraction!5e0!3m2!1sen!2sus!4v1593451822879!5m2!1sen!2sus" width="100%" height="450" frameborder="0" style="border: 0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
     </div>
-    <?php get_footer(); ?>
+    <?php get_footer();?>
