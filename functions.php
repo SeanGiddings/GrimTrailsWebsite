@@ -162,7 +162,7 @@ function announcement_widgets_init()
         'before_title' => '<div class="announcement__text">',
         'after_title' => '</div>',
     ));
-    
+
 }
 add_action('widgets_init', 'announcement_widgets_init');
 
@@ -228,9 +228,6 @@ class announcement_widget extends WP_Widget
     }
 }
 
-
-
-
 /**
  * CUSTOM PRODUCT WIDGET
  *
@@ -246,12 +243,12 @@ function product_widgets_init()
     register_sidebar(array(
         'name' => 'Store',
         'id' => 'product__section',
-        'before_widget' => '<div class="card__container col-lg-12">',
+        'before_widget' => '<div>',
         'after_widget' => '</div>',
-        'before_title' => '<div class="product__text">',
+        'before_title' => '<div>',
         'after_title' => '</div>',
     ));
-    
+
 }
 add_action('widgets_init', 'product_widgets_init');
 
@@ -268,73 +265,78 @@ add_action('widgets_init', 'product_register_widget');
 
 class product_widget extends WP_Widget
 {
-    function __construct() {
- 
+    public function __construct()
+    {
+
         // Add Widget scripts
         add_action('admin_enqueue_scripts', array($this, 'scripts'));
-      
+
         parent::__construct(
-           'product_widget', // Base ID
-           __( 'Add Product', 'text_domain' ), // Name
-           array( 'description' => __( 'Drag this to the Store Section to the right to build your product card.', 'text_domain' ), ) // Args
+            'product_widget', // Base ID
+            __('Add Product', 'text_domain'), // Name
+            array('description' => __('Drag this to the Store Section to the right to build your product card.', 'text_domain')) // Args
         );
-     }
-    public function widget( $args, $instance ) {
+    }
+    public function widget($args, $instance)
+    {
         // Our variables from the widget settings
-        $title = apply_filters( 'widget_title', empty( $instance['title'] ) ? __( 'Default title', 'text_domain' ) : $instance['title'] );
-        $image = ! empty( $instance['image'] ) ? $instance['image'] : '';
-        $description = ! empty( $instance['description'] ) ? $instance['description'] : '';
-        $price = ! empty( $instance['price'] ) ? $instance['price'] : '';
+        $title = apply_filters('widget_title', empty($instance['title']) ? __('Default title', 'text_domain') : $instance['title']);
+        $image = !empty($instance['image']) ? $instance['image'] : '';
+        $description = !empty($instance['description']) ? $instance['description'] : '';
+        $price = !empty($instance['price']) ? $instance['price'] : '';
 
         ob_start();
         echo $args['before_widget'];
-        if ( ! empty( $instance['title'] ) ) {
-           echo $args['before_title'] . $title . $args['after_title'];
+        if (!empty($instance['title'])) {
+            echo $args['before_title'] . $title . $args['after_title'];
         }
         ?>
-      
-        <?php if($image): ?>
-           <img src="<?php echo esc_url($image); ?>" alt="">
-        <?php endif; ?>
 
-        <?php if($price): ?>
-           <h2><?php echo $price ?></h2>
-        <?php endif; ?>
+        <?php if ($price): ?>
+            <div class="card__container col-lg-12">
+            <?php if (!empty($instance['image'])): ?>
+                <div class="card__image"><img src="<?php echo esc_url($image); ?>" alt=""></div>
+            <?php endif;?>
+            <?php if (empty($instance['image'])): ?>
+                <div class="card__image"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/ProductDemo.jpg" alt="Denim Jeans"></div>
+            <?php endif;?>
+            
+                <div class="card__info">
+                    <h1 class="product__title"><?php echo $title ?></h1>
+                    <p class="product__price"><?php echo $price ?></p>
+                    <p class="product__description"><?php echo $description ?></p>
+                    <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                        <input type="hidden" name="cmd" value="_cart">
+                        <input type="hidden" name="business" value="grimtrails01@gmail.com">
+                        <input type="hidden" name="lc" value="US">
+                        <input type="hidden" name="item_name" value="<?php echo $title ?>">
+                        <input type="hidden" name="amount" value="<?php echo $price ?>">
+                        <input type="hidden" name="currency_code" value="USD">
+                        <input type="hidden" name="button_subtype" value="products">
+                        <input type="hidden" name="no_note" value="0">
+                        <input type="hidden" name="add" value="1">
+                        <input type="hidden" name="bn" value="PP-ShopCartBF:btn_cart_LG.gif:NonHostedGuest">
+                        <input type="image" src="<?php echo get_stylesheet_directory_uri(); ?>/images/paypalcheckout-60px.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                    </form>
+                </div>
+            </div>
+        <?php endif;?>
 
-        <?php if($description): ?>
-           <h2><?php echo $description ?></h2>
-        <?php endif; ?>
-
-        <?php if($price): ?>
-            <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
-                    <input type="hidden" name="cmd" value="_cart">
-                    <input type="hidden" name="business" value="grimtrails01@gmail.com">
-                    <input type="hidden" name="lc" value="US">
-                    <input type="hidden" name="item_name" value="<?php echo $title ?>">
-                    <input type="hidden" name="amount" value="<?php echo $price ?>">
-                    <input type="hidden" name="currency_code" value="USD">
-                    <input type="hidden" name="button_subtype" value="products">
-                    <input type="hidden" name="no_note" value="0">
-                    <input type="hidden" name="add" value="1">
-                    <input type="hidden" name="bn" value="PP-ShopCartBF:btn_cart_LG.gif:NonHostedGuest">
-                    <input type="image" src="<?php echo get_stylesheet_directory_uri(); ?>/images/paypalcheckout-60px.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-                    <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-                </form>
-        <?php endif; ?>
-      
         <?php
-        echo $args['after_widget'];
+echo $args['after_widget'];
         ob_end_flush();
-     }
-     public function form( $instance ) {
-        $title = ! empty( $instance['title'] ) ? $instance['title'] : __( 'Product Name', 'text_domain' );
-        $image = ! empty( $instance['image'] ) ? $instance['image'] : '';
-        $price = ! empty( $instance['price'] ) ? $instance['price'] : __( 'Enter the Price here (19.99 for example)', 'text_domain' );
-        $description = ! empty( $instance['description'] ) ? $instance['description'] : __( 'Product Description', 'text_domain' );
+    }
+    public function form($instance)
+    {
+        $title = !empty($instance['title']) ? $instance['title'] : __('Product Name', 'text_domain');
+        $image = !empty($instance['image']) ? $instance['image'] : '';
+        $price = !empty($instance['price']) ? $instance['price'] : __('Enter the Price here (19.99 for example)', 'text_domain');
+        $description = !empty($instance['description']) ? $instance['description'] : __('Product Description', 'text_domain');
         ?>
         <p>
-           <label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php _e( 'Title:' ); ?></label>
-           <input class="widefat" id="<?php echo $this->get_field_id( 'title' ); ?>" name="<?php echo $this->get_field_name( 'title' ); ?>" type="text" value="<?php echo esc_attr( $title ); ?>">
+           <label for="<?php echo $this->get_field_id('title'); ?>"><?php _e('Title:');?></label>
+           <input class="widefat" id="<?php echo $this->get_field_id('title'); ?>" name="<?php echo $this->get_field_name('title'); ?>" type="text" value="<?php echo esc_attr($title); ?>">
         </p>
         <p>
         <label for="<?php echo $this->get_field_id('price'); ?>"><?php _e('Price (19.99 for example):');?></label>
@@ -345,24 +347,25 @@ class product_widget extends WP_Widget
         <input class="widefat" id="<?php echo $this->get_field_id('description'); ?>" name="<?php echo $this->get_field_name('description'); ?>" type="text" value="<?php echo esc_attr($description); ?>" />
     </p>
         <p>
-           <label for="<?php echo $this->get_field_id( 'image' ); ?>"><?php _e( 'Image:' ); ?></label>
-           <input class="widefat" id="<?php echo $this->get_field_id( 'image' ); ?>" name="<?php echo $this->get_field_name( 'image' ); ?>" type="text" value="<?php echo esc_url( $image ); ?>" />
+           <label for="<?php echo $this->get_field_id('image'); ?>"><?php _e('Image:');?></label>
+           <input class="widefat" id="<?php echo $this->get_field_id('image'); ?>" name="<?php echo $this->get_field_name('image'); ?>" type="text" value="<?php echo esc_url($image); ?>" />
            <button class="upload_image_button button button-primary">Upload Image</button>
         </p>
         <?php
-     }
-     public function update( $new_instance, $old_instance ) {
+}
+    public function update($new_instance, $old_instance)
+    {
         $instance = array();
-        $instance['title'] = ( ! empty( $new_instance['title'] ) ) ? strip_tags( $new_instance['title'] ) : '';
-        $instance['image'] = ( ! empty( $new_instance['image'] ) ) ? $new_instance['image'] : '';
+        $instance['title'] = (!empty($new_instance['title'])) ? strip_tags($new_instance['title']) : '';
+        $instance['image'] = (!empty($new_instance['image'])) ? $new_instance['image'] : '';
         $instance['price'] = htmlentities($new_instance['price']);
         $instance['description'] = (!empty($new_instance['description'])) ? strip_tags($new_instance['description']) : '';
         return $instance;
-     }
-     public function scripts()
-{
-   wp_enqueue_script( 'media-upload' );
-   wp_enqueue_media();
-   wp_enqueue_script('our_admin', get_template_directory_uri() . '/js/image-loader.js', array('jquery'));
-}
+    }
+    public function scripts()
+    {
+        wp_enqueue_script('media-upload');
+        wp_enqueue_media();
+        wp_enqueue_script('our_admin', get_template_directory_uri() . '/js/image-loader.js', array('jquery'));
+    }
 }

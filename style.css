@@ -690,6 +690,7 @@ form input[type="image"] {
 
 .card__info {
   padding: 35px 35px 0;
+  width: 75%;
 }
 
 .card__image {
