@@ -12,6 +12,11 @@
 		<?php dynamic_sidebar('product__section');?>
 	</div><!-- #primary-sidebar -->
 <?php endif;?>
+
+<?php if (!is_active_sidebar('product__section')): ?>
+	<h2>Products Coming Soon!
+	</h2>
+<?php endif;?>
 <!--
 <div class="card__container col-lg-12">
         <div class="card__image"><img src="<?php echo esc_url($image); ?>" alt=""></div>

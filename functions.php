@@ -245,7 +245,7 @@ function product_widgets_init()
         'id' => 'product__section',
         'before_widget' => '<div>',
         'after_widget' => '</div>',
-        'before_title' => '<div>',
+        'before_title' => '<div class="d-none">',
         'after_title' => '</div>',
     ));
 
@@ -294,12 +294,14 @@ class product_widget extends WP_Widget
 
         <?php if ($price): ?>
             <div class="card__container col-lg-12">
+                
+            <?php if (empty($instance['image'])): ?>
+                <div class="card__image"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/comingsoon.jpg" alt="Denim Jeans"></div>
+            <?php endif;?>
             <?php if (!empty($instance['image'])): ?>
                 <div class="card__image"><img src="<?php echo esc_url($image); ?>" alt=""></div>
             <?php endif;?>
-            <?php if (empty($instance['image'])): ?>
-                <div class="card__image"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/ProductDemo.jpg" alt="Denim Jeans"></div>
-            <?php endif;?>
+
             
                 <div class="card__info">
                     <h1 class="product__title"><?php echo $title ?></h1>
