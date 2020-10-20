@@ -297,8 +297,7 @@ class product_widget extends WP_Widget
                 
             <?php if (empty($instance['image'])): ?>
                 <div class="card__image"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/comingsoon.jpg" alt="Denim Jeans"></div>
-            <?php endif;?>
-            <?php if (!empty($instance['image'])): ?>
+            <?php else : ?>
                 <div class="card__image"><img src="<?php echo esc_url($image); ?>" alt=""></div>
             <?php endif;?>
 
