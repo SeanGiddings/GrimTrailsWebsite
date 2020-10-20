@@ -14,7 +14,7 @@
 <?php endif;?>
 
 <?php if (!is_active_sidebar('product__section')): ?>
-	<h2>Products Coming Soon!
+	<h2 class="comingsoon">Products Coming Soon!
 	</h2>
 <?php endif;?>
 <!--

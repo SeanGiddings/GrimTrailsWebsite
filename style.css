@@ -169,7 +169,7 @@ body {
   background-color: rgba(0, 0, 0, 0.8);
   max-width: 1400px;
   margin: 0 auto;
-  padding: 5px 20px 0;
+  padding: 0 20px;
 }
 
 .header__logo {
@@ -706,6 +706,15 @@ form input[type="image"] {
     border: 2px solid #555;
 }
 
+.comingsoon{
+  padding: 75px;
+  font-size: 50px;
+  text-align: center;
+  font-family: 'Federo', sans-serif;
+}
+
+.body__wrapper {
+  padding-bottom: 1px;
 }
 
 /***** Blog Customization *****/
