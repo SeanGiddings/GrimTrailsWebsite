@@ -142,6 +142,24 @@ function additional_custom_scripts()
 }
 add_action('wp_enqueue_scripts', 'additional_custom_scripts');
 
+add_role(
+    'grimtrails_owner',
+    __( 'Grim Trails Owner' ),
+    array(
+    'read'         => true,  // true allows this capability
+    'edit_posts'   => true,
+    'edit_theme_options'   => true,
+    'edit_others_posts'   => true,
+    'edit_published_posts'   => true,
+    'edit_published_posts'   => true,
+    'upload_files'   => true,
+    'publish_posts'   => true,
+    'delete_published_posts'   => true,
+    'delete_posts'   => true,
+    'delete_others_posts'   => true
+    )
+    );
+
 /**
  * CUSTOM ANNOUNCEMENT WIDGET
  *
