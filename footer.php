@@ -1,7 +1,7 @@
 </div>
 <footer id="footer">
   <!--Footer-->
-
+<!--
   <div class="covid__container">
     <h2 class="covid__title">
       IMPORTANT COVID-19 MESSAGE
@@ -10,6 +10,7 @@
       Our primarily outdoor event will safely open this year. Due to Covid-19, we are taking extra precautions in the preparation and organization of the Haunt. Please see our <a href="/covid">Covid-19 page</a> for more information.
     </p>
   </div>
+-->
   <div class="footer__container">
   <img
         id="footerlogo1"
