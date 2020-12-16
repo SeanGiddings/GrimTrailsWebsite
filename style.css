@@ -194,9 +194,18 @@ body {
   font-size: 1.5rem;
 }
 
+.header__socialmedia a {
+  text-decoration: none;
+}
+
 .socialmedia__icon {
   max-width: 28px;
   border-radius: 5px;
+  transition: transform .2s;
+}
+
+.socialmedia__icon:hover {
+  transform: scale(1.2);
 }
 
 .tickets-button a {
@@ -716,6 +725,7 @@ form input[type="image"] {
 .body__wrapper {
   padding-bottom: 1px;
 }
+}
 
 /***** Blog Customization *****/
 
@@ -726,30 +736,35 @@ form input[type="image"] {
   padding: 5px 20px 0;
 }
 
-/* Remove meta data */
-/*.entry-meta { display: none; }*/
+.author { display: none; }
 
 .entry-title {
-  font-size: 70px;
+  font-size: 50px;
   margin: 30px 0;
   text-align: center;
   padding-bottom: 30px;
   border-bottom: solid 2px #333;
 }
 
-.entry-title a{
+.entry-title a, .entry-footer span {
   color: #fff;
 }
+
+.entry-date {
+  color: #fff;
+  font-size: 1.3em;
+}
+
 .entry-title a:hover{
   text-decoration: none;
 }
 
 .entry-content {
-  font-size: 22px;
+  font-size: 30px;
   font-family: 'Federo', sans-serif;
 }
 
-.entry-content a {
+.entry-content a, .widget_recent_entries a, .entry-footer a, .nav-previous a, .nav-next a {
   color: #f11203;
 }
 
@@ -769,7 +784,22 @@ form input[type="image"] {
 }
 
 .widget_recent_entries ul {
-  font-size: 40px;
+  font-size: 30px;
   margin-bottom: 20px;
 }
 
+.entry-footer, .nav-links { 
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+
+.nav-links { 
+  font-size: 20px;
+
+}
+
+@media (min-width: 768px) {
+  .entry-title {
+    font-size: 70px;
+  }
+}
