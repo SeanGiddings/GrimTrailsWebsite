@@ -16,11 +16,11 @@
         <div class="tertpage__text">
           <p>Tickets can be purchased at the gate or online using paypal</p>
           <br>
-          <p>Tickets are <span>$20.00</span> per person.</p>
+          <p>Tickets are <span>Unavailable</span> at this time.</p>
 
         <p><br>Still have questions?  Please refer to our F.A.Q.</p>
         </div>
-        <div class="paypal-button">
+        <!-- <div class="paypal-button">
         <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
             <input type="hidden" name="cmd" value="_cart">
             <input type="hidden" name="business" value="grimtrails01@gmail.com">
@@ -35,10 +35,10 @@
             <input type="image" src="<?php echo get_stylesheet_directory_uri(); ?>/images/paypalcheckout-60px.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
             <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
             </form>
-        </div>
-        <div class="tickets__instruction">
+        </div> -->
+        <!-- <div class="tickets__instruction">
           <p>Print out the paypal invoice and present it to the ticket handler.</p>
-        </div>
+        </div> -->
 
       </div>
 </div>
