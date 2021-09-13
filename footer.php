@@ -21,11 +21,11 @@
       />
       <div class="footer__info">
     <div class="footer__addressline">
-      <div class="footer__address">
+      <!-- <div class="footer__address">
         <a href="https://www.google.com/maps/place/Grim+Trails+Haunted+Attraction,+12009+Rehl+Rd,+Louisville,+KY+40299/@38.2008512,-85.5336743,15z/data=!4m2!3m1!1s0x8869a190dd2db409:0x2a883abdca7cee7c" target="_blank">
           12009 Rehl Rd, Louisville, KY 40299
         </a>
-      </div>
+      </div> -->
       <div class="footer__phone">
         <a href="tel:502-594-7624" target="_blank">
           502-594-7624

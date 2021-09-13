@@ -40,7 +40,7 @@
     <!--Event Schedule Blocks-->
     <div class="schedule__container">
       <div class="schedule__column schedule__mobile">
-        <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/calendar2020.png" class="schedule__image img-fluid" />
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/1_homepage.png" class="schedule__image img-fluid" />
       </div>
       <div class="schedule__column">
         <div class="schedule__text">
@@ -58,7 +58,7 @@
         </div>
       </div>
       <div class="schedule__column schedule__column-right">
-        <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/calendar2020.png" class="schedule__image img-fluid" />
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/1_homepage.png" class="schedule__image img-fluid" />
       </div>
     </div>
 
@@ -74,7 +74,7 @@
     </div>
 
     <!--Map-->
-    <div class="map__container">
+    <!-- <div class="map__container">
       <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12541.558295415894!2d-85.5336743!3d38.2008512!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2a883abdca7cee7c!2sGrim%20Trails%20Haunted%20Attraction!5e0!3m2!1sen!2sus!4v1593451822879!5m2!1sen!2sus" width="100%" height="450" frameborder="0" style="border: 0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-    </div>
+    </div> -->
     <?php get_footer();?>
