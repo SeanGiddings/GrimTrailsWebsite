@@ -14,145 +14,263 @@ BlankSlate WordPress Theme © 2011-2019 TidyThemes
 BlankSlate is distributed under the terms of the GNU GPL
 */
 
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
   border: 0;
   font-size: 100%;
   font: inherit;
-  vertical-align: baseline
+  vertical-align: baseline;
 }
 
 body {
-  line-height: 1
+  line-height: 1;
 }
 
 button {
-  outline: 0
+  outline: 0;
 }
 
-ol, ul {
-  list-style: none
+ol,
+ul {
+  list-style: none;
 }
 
-blockquote, q {
-  quotes: none
+blockquote,
+q {
+  quotes: none;
 }
 
-blockquote:before, blockquote:after, q:before, q:after {
-  content: '';
-  content: none
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
 }
 
 q {
   display: inline;
-  font-style: italic
+  font-style: italic;
 }
 
 q:before {
   content: '"';
-  font-style: normal
+  font-style: normal;
 }
 
 q:after {
   content: '"';
-  font-style: normal
+  font-style: normal;
 }
 
-textarea, input[type="text"], input[type="button"], input[type="submit"], input[type="reset"], input[type="search"], input[type="password"] {
+textarea,
+input[type="text"],
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+input[type="search"],
+input[type="password"] {
   -webkit-appearance: none;
   appearance: none;
-  border-radius: 0
+  border-radius: 0;
 }
 
 table {
   border-collapse: collapse;
-  border-spacing: 0
+  border-spacing: 0;
 }
 
-th, td {
-  padding: 2px
+th,
+td {
+  padding: 2px;
 }
 
 big {
-  font-size: 120%
+  font-size: 120%;
 }
 
-small, sup, sub {
-  font-size: 80%
+small,
+sup,
+sub {
+  font-size: 80%;
 }
 
 sup {
-  vertical-align: super
+  vertical-align: super;
 }
 
 sub {
-  vertical-align: sub
+  vertical-align: sub;
 }
 
 dd {
-  margin-left: 20px
+  margin-left: 20px;
 }
 
-kbd, tt {
+kbd,
+tt {
   font-family: courier;
-  font-size: 12px
+  font-size: 12px;
 }
 
 ins {
-  text-decoration: underline
+  text-decoration: underline;
 }
 
-del, strike, s {
-  text-decoration: line-through
+del,
+strike,
+s {
+  text-decoration: line-through;
 }
 
 dt {
-  font-weight: bold
+  font-weight: bold;
 }
 
-address, cite, var {
-  font-style: italic
+address,
+cite,
+var {
+  font-style: italic;
 }
 
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
-  display: block
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 
 * {
   box-sizing: border-box;
-  -webkit-tap-highlight-color: transparent
+  -webkit-tap-highlight-color: transparent;
 }
 
-.sticky {}
+.sticky {
+}
 
-.bypostauthor {}
+.bypostauthor {
+}
 
-.wp-caption {}
+.wp-caption {
+}
 
-.wp-caption-text {}
+.wp-caption-text {
+}
 
-.gallery-caption {}
+.gallery-caption {
+}
 
-.alignright {}
+.alignright {
+}
 
-.alignleft {}
+.alignleft {
+}
 
-.aligncenter {}
+.aligncenter {
+}
 
 .screen-reader-text {
   clip: rect(1px, 1px, 1px, 1px);
-  position: absolute !important
+  position: absolute !important;
 }
 
 @font-face {
   font-family: "edo_szregular";
-  src: url("font/edosz-webfont.woff2") format("woff2"), url("font/edosz-webfont.woff") format("woff");
+  src: url("font/edosz-webfont.woff2") format("woff2"),
+    url("font/edosz-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Federo&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Federo&display=swap");
 body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: #eee;
@@ -165,7 +283,10 @@ body {
   font-family: "edo_szregular", sans-serif;
 }
 
-.body__wrapper, .header__container, .covid__container, .footer__container {
+.body__wrapper,
+.header__container,
+.covid__container,
+.footer__container {
   background-color: rgba(0, 0, 0, 0.8);
   max-width: 1400px;
   margin: 0 auto;
@@ -201,7 +322,7 @@ body {
 .socialmedia__icon {
   max-width: 28px;
   border-radius: 5px;
-  transition: transform .2s;
+  transition: transform 0.2s;
 }
 
 .socialmedia__icon:hover {
@@ -236,6 +357,12 @@ body {
 .description__container {
   margin: 50px 50px;
   text-align: center;
+}
+
+.description__banner {
+  padding: 20px 40px;
+  color: #f11203;
+  background: #000;
 }
 
 .description__title h1 {
@@ -301,7 +428,7 @@ body {
 }
 
 .schedule__text {
-  font-family: 'Federo', sans-serif;
+  font-family: "Federo", sans-serif;
   font-size: 30px;
 }
 
@@ -325,7 +452,7 @@ body {
 
 .tour__description {
   color: #fff;
-  font-family: 'Federo', sans-serif;
+  font-family: "Federo", sans-serif;
   font-size: 25px;
   margin-top: 10px;
 }
@@ -336,18 +463,21 @@ body {
 
 .footer__container {
   padding: 30px 0;
-  font-family: 'Federo', sans-serif;
+  font-family: "Federo", sans-serif;
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.footer__container a, .covid__container a, span {
+.footer__container a,
+.covid__container a,
+span {
   color: #f11203;
 }
 
-.footer__container a:hover, .covid__container a:hover {
+.footer__container a:hover,
+.covid__container a:hover {
   color: #f11203;
   text-decoration: none;
 }
@@ -454,11 +584,12 @@ body {
 .tertpage__text {
   font-size: 25px;
   margin: 30px 0;
-  font-family: 'Federo', sans-serif;
+  font-family: "Federo", sans-serif;
   text-align: center;
 }
 
-.tertpage__text a, .awards__list a {
+.tertpage__text a,
+.awards__list a {
   color: #f11203;
 }
 
@@ -479,7 +610,7 @@ body {
 .tickets__instruction {
   font-size: 30px;
   padding-bottom: 30px;
-  font-family: 'Federo', sans-serif;
+  font-family: "Federo", sans-serif;
   text-align: center;
 }
 
@@ -489,10 +620,11 @@ body {
   margin-top: 60px;
 }
 
-.faq__answer, .awards__list {
+.faq__answer,
+.awards__list {
   font-size: 22px;
   margin-top: 20px;
-  font-family: 'Federo', sans-serif;
+  font-family: "Federo", sans-serif;
 }
 
 .awards__list {
@@ -507,25 +639,27 @@ body {
 .disclaimer__title {
   font-size: 30px;
   margin-top: 60px;
-  font-family: 'Federo', sans-serif;
+  font-family: "Federo", sans-serif;
 }
 
-.awards__title, .schedule__title {
+.awards__title,
+.schedule__title {
   font-size: 30px;
-  font-family: 'Federo', sans-serif;
+  font-family: "Federo", sans-serif;
 }
 
-.awards__subtitle, .schedule__subtitle {
+.awards__subtitle,
+.schedule__subtitle {
   font-size: 35px;
   margin-top: 20px;
-  font-family: 'Federo', sans-serif;
+  font-family: "Federo", sans-serif;
 }
 
 .awards__article-text {
   padding: 20px;
   font-size: 25px;
   line-height: 30px;
-  font-family: 'Federo', sans-serif;
+  font-family: "Federo", sans-serif;
 }
 
 .awards__images img {
@@ -535,7 +669,7 @@ body {
 .disclaimer__text {
   font-size: 20px;
   margin-top: 20px;
-  font-family: 'Federo', sans-serif;
+  font-family: "Federo", sans-serif;
 }
 
 #gallery img {
@@ -550,7 +684,7 @@ body {
 }
 
 .schedulepage__container {
-  font-family: 'Federo', sans-serif;
+  font-family: "Federo", sans-serif;
   text-align: center;
   margin: 40px auto;
 }
@@ -608,23 +742,29 @@ body {
 
 .announcement__container {
   max-width: 1400px;
-    background: red;
-    text-align: center;
-    color: black;
-    font-size: 50px;
-    padding: 30px;
-    margin: 0 auto;
+  background: red;
+  text-align: center;
+  color: black;
+  font-size: 50px;
+  padding: 30px;
+  margin: 0 auto;
 }
 
 /*** Product Card ***/
 
-.card__container {  
-    display: block;
-    border: 2px solid #555;
-    max-width: 100%;
-    margin: 0 auto;
-    background: rgb(0,0,0);
-    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(45,45,45,1) 23%, rgba(57,57,57,1) 78%, rgba(0,0,0,1) 100%);
+.card__container {
+  display: block;
+  border: 2px solid #555;
+  max-width: 100%;
+  margin: 0 auto;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(45, 45, 45, 1) 23%,
+    rgba(57, 57, 57, 1) 78%,
+    rgba(0, 0, 0, 1) 100%
+  );
   border-radius: 5px;
   padding-bottom: 20px;
   filter: drop-shadow(2px 4px 6px black);
@@ -640,13 +780,13 @@ body {
   filter: drop-shadow(2px 4px 6px black);
 }
 
-.card__image img{
+.card__image img {
   max-width: 100%;
-    height: auto;
-    margin-top: -20px;
-    border-radius: 5px;
-    border: 2px solid #555;
-    background-color: #c0c0c0;
+  height: auto;
+  margin-top: -20px;
+  border-radius: 5px;
+  border: 2px solid #555;
+  background-color: #c0c0c0;
 }
 
 .product__title {
@@ -657,7 +797,7 @@ body {
 .product__price {
   color: #f11203;
   font-size: 35px;
-  font-family: 'Federo', sans-serif;
+  font-family: "Federo", sans-serif;
   padding: 5px;
 }
 
@@ -665,7 +805,7 @@ body {
   color: #fff;
   font-size: 20px;
   padding: 10px;
-  font-family: 'Federo', sans-serif;
+  font-family: "Federo", sans-serif;
   margin-bottom: 10px;
 }
 
@@ -690,41 +830,41 @@ form input[type="image"] {
 }
 
 @media (min-width: 768px) {
-  .card__container {  
+  .card__container {
     display: flex;
     justify-content: space-around;
     max-width: 85%;
-  margin-bottom: 50px;
-}
+    margin-bottom: 50px;
+  }
 
-.card__info {
-  padding: 35px 35px 0;
-  width: 75%;
-}
+  .card__info {
+    padding: 35px 35px 0;
+    width: 75%;
+  }
 
-.card__image {
-  max-width: 500px;
-  filter: drop-shadow(2px 4px 6px black);
-}
+  .card__image {
+    max-width: 500px;
+    filter: drop-shadow(2px 4px 6px black);
+  }
 
-.card__image img{
+  .card__image img {
     max-width: 300px;
     margin-top: -20px;
     margin-left: -40px;
     border-radius: 5px;
     border: 2px solid #555;
-}
+  }
 
-.comingsoon{
-  padding: 75px;
-  font-size: 50px;
-  text-align: center;
-  font-family: 'Federo', sans-serif;
-}
+  .comingsoon {
+    padding: 75px;
+    font-size: 50px;
+    text-align: center;
+    font-family: "Federo", sans-serif;
+  }
 
-.body__wrapper {
-  padding-bottom: 1px;
-}
+  .body__wrapper {
+    padding-bottom: 1px;
+  }
 }
 
 /***** Blog Customization *****/
@@ -736,7 +876,9 @@ form input[type="image"] {
   padding: 5px 20px 0;
 }
 
-.author { display: none; }
+.author {
+  display: none;
+}
 
 .entry-title {
   font-size: 50px;
@@ -746,7 +888,8 @@ form input[type="image"] {
   border-bottom: solid 2px #333;
 }
 
-.entry-title a, .entry-footer span {
+.entry-title a,
+.entry-footer span {
   color: #fff;
 }
 
@@ -755,16 +898,20 @@ form input[type="image"] {
   font-size: 1.3em;
 }
 
-.entry-title a:hover{
+.entry-title a:hover {
   text-decoration: none;
 }
 
 .entry-content {
   font-size: 30px;
-  font-family: 'Federo', sans-serif;
+  font-family: "Federo", sans-serif;
 }
 
-.entry-content a, .widget_recent_entries a, .entry-footer a, .nav-previous a, .nav-next a {
+.entry-content a,
+.widget_recent_entries a,
+.entry-footer a,
+.nav-previous a,
+.nav-next a {
   color: #f11203;
 }
 
@@ -772,11 +919,12 @@ form input[type="image"] {
   margin: 20px;
 }
 
-#sidebar, .entry-footer {
+#sidebar,
+.entry-footer {
   margin-top: 30px;
 }
 
-.widget-title{
+.widget-title {
   font-size: 50px;
   max-width: 689px;
   border-bottom: 2px solid #fff;
@@ -788,14 +936,14 @@ form input[type="image"] {
   margin-bottom: 20px;
 }
 
-.entry-footer, .nav-links { 
+.entry-footer,
+.nav-links {
   font-size: 25px;
   margin-bottom: 15px;
 }
 
-.nav-links { 
+.nav-links {
   font-size: 20px;
-
 }
 
 @media (min-width: 768px) {
