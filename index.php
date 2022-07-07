@@ -22,7 +22,8 @@
 	  <h1 class="description__banner">
 		  Grim Trails is on the move in 2022 to Tom Sawyer Park!
 		  <br><br>
-		  That's right, Grim Trails is taking 2021 off to build our largest haunted attraction to date. We are going from 4 acres to 20 acres, and will now be located at Tom Sawyer Park, off Westport Rd.
+		  Grim Trails is building our largest haunted attraction to date. We are going from 4 acres to 20 acres, 
+		  and will now be located at <a href="https://goo.gl/maps/euuepqihDtuw3ejV8" target="_blank"><br>2600 Freys Hill Rd<br>Louisville, KY 40241<br></a> in Tom Sawyer Park.
 		</h1>
 		<br><br>
 		<h1>
@@ -50,8 +51,8 @@
 	  </div>
 	  <div class="schedule__column">
 		<div class="schedule__text">
-		  <div class="schedule__subtitle">2021 EVENT SCHEDULE</div>
-	  <p>We will be closed the 2021 season, but reopening in 2022 at Tom Sawyer Park!</p>
+		  <div class="schedule__subtitle">2022 EVENT SCHEDULE</div>
+	  <p>We are opening on September 16th, and running every Friday and Saturday night until October 29th</p>
 		  <!-- Open Dusk to 12:30AM <br />Fridays and Saturdays starting on
 		  October 2nd
 		  <p>Tickets are <span>$20.00</span> per person.</p> -->
@@ -81,7 +82,7 @@
 	</div>
 
 	<!--Map-->
-	<!-- <div class="map__container">
-	  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12541.558295415894!2d-85.5336743!3d38.2008512!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2a883abdca7cee7c!2sGrim%20Trails%20Haunted%20Attraction!5e0!3m2!1sen!2sus!4v1593451822879!5m2!1sen!2sus" width="100%" height="450" frameborder="0" style="border: 0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-	</div> -->
+	<div class="map__container">
+	  <iframe src="https://www.google.com/maps/d/embed?mid=1q0bMNj8vJKeLI3YxUI7-tqP0_vZrOYY&ehbc=2E312F" width="100%" height="450" frameborder="0" style="border: 0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+	</div>
 	<?php get_footer(); ?>
