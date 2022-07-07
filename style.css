@@ -366,8 +366,8 @@ body {
 }
 
 .description__banner a {
-	color: #afd059;
-	text-decoration: none;
+	color: #afd059 !important;
+	text-decoration: none !important;
 }
 
 .description__title h1 {
