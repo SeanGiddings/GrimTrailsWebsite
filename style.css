@@ -95,53 +95,53 @@ time,
 mark,
 audio,
 video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
 
 body {
-  line-height: 1;
+	line-height: 1;
 }
 
 button {
-  outline: 0;
+	outline: 0;
 }
 
 ol,
 ul {
-  list-style: none;
+	list-style: none;
 }
 
 blockquote,
 q {
-  quotes: none;
+	quotes: none;
 }
 
 blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: "";
-  content: none;
+	content: "";
+	content: none;
 }
 
 q {
-  display: inline;
-  font-style: italic;
+	display: inline;
+	font-style: italic;
 }
 
 q:before {
-  content: '"';
-  font-style: normal;
+	content: '"';
+	font-style: normal;
 }
 
 q:after {
-  content: '"';
-  font-style: normal;
+	content: '"';
+	font-style: normal;
 }
 
 textarea,
@@ -151,67 +151,67 @@ input[type="submit"],
 input[type="reset"],
 input[type="search"],
 input[type="password"] {
-  -webkit-appearance: none;
-  appearance: none;
-  border-radius: 0;
+	-webkit-appearance: none;
+	appearance: none;
+	border-radius: 0;
 }
 
 table {
-  border-collapse: collapse;
-  border-spacing: 0;
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 
 th,
 td {
-  padding: 2px;
+	padding: 2px;
 }
 
 big {
-  font-size: 120%;
+	font-size: 120%;
 }
 
 small,
 sup,
 sub {
-  font-size: 80%;
+	font-size: 80%;
 }
 
 sup {
-  vertical-align: super;
+	vertical-align: super;
 }
 
 sub {
-  vertical-align: sub;
+	vertical-align: sub;
 }
 
 dd {
-  margin-left: 20px;
+	margin-left: 20px;
 }
 
 kbd,
 tt {
-  font-family: courier;
-  font-size: 12px;
+	font-family: courier;
+	font-size: 12px;
 }
 
 ins {
-  text-decoration: underline;
+	text-decoration: underline;
 }
 
 del,
 strike,
 s {
-  text-decoration: line-through;
+	text-decoration: line-through;
 }
 
 dt {
-  font-weight: bold;
+	font-weight: bold;
 }
 
 address,
 cite,
 var {
-  font-style: italic;
+	font-style: italic;
 }
 
 article,
@@ -225,12 +225,12 @@ hgroup,
 menu,
 nav,
 section {
-  display: block;
+	display: block;
 }
 
 * {
-  box-sizing: border-box;
-  -webkit-tap-highlight-color: transparent;
+	box-sizing: border-box;
+	-webkit-tap-highlight-color: transparent;
 }
 
 .sticky {
@@ -258,653 +258,658 @@ section {
 }
 
 .screen-reader-text {
-  clip: rect(1px, 1px, 1px, 1px);
-  position: absolute !important;
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
 }
 
 @font-face {
-  font-family: "edo_szregular";
-  src: url("font/edosz-webfont.woff2") format("woff2"),
-    url("font/edosz-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
+	font-family: "edo_szregular";
+	src: url("font/edosz-webfont.woff2") format("woff2"),
+		url("font/edosz-webfont.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Federo&display=swap");
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #eee;
-  background: #000 url("images/bg.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  margin: 0;
-  color: #fff;
-  font-family: "edo_szregular", sans-serif;
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #eee;
+	background: #000 url("images/bg.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	margin: 0;
+	color: #fff;
+	font-family: "edo_szregular", sans-serif;
 }
 
 .body__wrapper,
 .header__container,
 .covid__container,
 .footer__container {
-  background-color: rgba(0, 0, 0, 0.8);
-  max-width: 1400px;
-  margin: 0 auto;
-  padding: 0 20px;
+	background-color: rgba(0, 0, 0, 0.8);
+	max-width: 1400px;
+	margin: 0 auto;
+	padding: 0 20px;
 }
 
 .header__logo {
-  width: 100%;
+	width: 100%;
 }
 
 .header__logo-desktop {
-  display: block;
+	display: block;
 }
 
 .header__logo-mobile {
-  display: none;
+	display: none;
 }
 
 .navbar-dark .navbar-nav .nav-link {
-  color: #f11203;
+	color: #f11203;
 }
 
 .navbar-nav {
-  justify-content: space-between;
-  width: 95%;
-  font-size: 1.5rem;
+	justify-content: space-between;
+	width: 95%;
+	font-size: 1.5rem;
 }
 
 .header__socialmedia a {
-  text-decoration: none;
+	text-decoration: none;
 }
 
 .socialmedia__icon {
-  max-width: 28px;
-  border-radius: 5px;
-  transition: transform 0.2s;
+	max-width: 28px;
+	border-radius: 5px;
+	transition: transform 0.2s;
 }
 
 .socialmedia__icon:hover {
-  transform: scale(1.2);
+	transform: scale(1.2);
 }
 
 .tickets-button a {
-  color: #f11203;
-  text-align: center;
-  height: 100px;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  font-size: 50px;
-  background: rgba(0, 0, 0, 0.5);
-  border: 5px solid #2b0100;
-  text-decoration: none;
+	color: #f11203;
+	text-align: center;
+	height: 100px;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	font-size: 50px;
+	background: rgba(0, 0, 0, 0.5);
+	border: 5px solid #2b0100;
+	text-decoration: none;
 }
 
 .tickets-button a:hover {
-  text-align: center;
-  height: 100px;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  font-size: 52px;
-  background: rgba(0, 0, 0, 0.5);
-  border: 5px solid #2b0100;
-  text-decoration: none;
+	text-align: center;
+	height: 100px;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	font-size: 52px;
+	background: rgba(0, 0, 0, 0.5);
+	border: 5px solid #2b0100;
+	text-decoration: none;
 }
 
 .description__container {
-  margin: 50px 50px;
-  text-align: center;
+	margin: 50px 50px;
+	text-align: center;
 }
 
 .description__banner {
-  padding: 20px 40px;
-  color: #f11203;
-  background: #000;
+	padding: 20px 40px;
+	color: #f11203;
+	background: #000;
+}
+
+.description__banner a {
+	color: #afd059;
+	text-decoration: none;
 }
 
 .description__title h1 {
-  font-size: 40px;
+	font-size: 40px;
 }
 
 .description__text {
-  font-size: 25px;
-  margin-top: 30px;
-  line-height: 50px;
+	font-size: 25px;
+	margin-top: 30px;
+	line-height: 50px;
 }
 
 @media (max-width: 992px) {
-  .header__socialmedia {
-    position: absolute;
-    right: 10px;
-    top: 10px;
-  }
+	.header__socialmedia {
+		position: absolute;
+		right: 10px;
+		top: 10px;
+	}
 }
 
 @media (max-width: 768px) {
-  .description__container {
-    margin: 40px 20px;
-  }
-  .description__title h1 {
-    font-size: 30px;
-  }
-  .description__text {
-    display: none;
-  }
-  .tickets-button a {
-    font-size: 40px;
-  }
-  .footer__addressline {
-    display: block;
-    text-align: center;
-  }
+	.description__container {
+		margin: 40px 20px;
+	}
+	.description__title h1 {
+		font-size: 30px;
+	}
+	.description__text {
+		display: none;
+	}
+	.tickets-button a {
+		font-size: 40px;
+	}
+	.footer__addressline {
+		display: block;
+		text-align: center;
+	}
 }
 
 @media (max-width: 500px) {
-  .header__logo-desktop {
-    display: block;
-  }
-  .header__logo-mobile {
-    display: block;
-  }
+	.header__logo-desktop {
+		display: block;
+	}
+	.header__logo-mobile {
+		display: block;
+	}
 }
 
 .schedule__container {
-  display: flex;
-  justify-content: space-around;
+	display: flex;
+	justify-content: space-around;
 }
 
 .schedule__column {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	text-align: center;
 }
 
 .schedule__subtitle {
-  font-size: 40px;
+	font-size: 40px;
 }
 
 .schedule__text {
-  font-family: "Federo", sans-serif;
-  font-size: 30px;
+	font-family: "Federo", sans-serif;
+	font-size: 30px;
 }
 
 .schedule__column-right {
-  margin: 0 30px;
+	margin: 0 30px;
 }
 
 .schedule__mobile {
-  display: none;
+	display: none;
 }
 
 .video-container {
-  margin-top: 20px;
+	margin-top: 20px;
 }
 
 .tour__info {
-  color: #f11203;
-  font-size: 35px;
-  margin-top: 20px;
+	color: #f11203;
+	font-size: 35px;
+	margin-top: 20px;
 }
 
 .tour__description {
-  color: #fff;
-  font-family: "Federo", sans-serif;
-  font-size: 25px;
-  margin-top: 10px;
+	color: #fff;
+	font-family: "Federo", sans-serif;
+	font-size: 25px;
+	margin-top: 10px;
 }
 
 .tour__description a {
-  color: #f11203;
+	color: #f11203;
 }
 
 .footer__container {
-  padding: 30px 0;
-  font-family: "Federo", sans-serif;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+	padding: 30px 0;
+	font-family: "Federo", sans-serif;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 }
 
 .footer__container a,
 .covid__container a,
 span {
-  color: #f11203;
+	color: #f11203;
 }
 
 .footer__container a:hover,
 .covid__container a:hover {
-  color: #f11203;
-  text-decoration: none;
+	color: #f11203;
+	text-decoration: none;
 }
 
 .footer__logo {
-  width: 10%;
+	width: 10%;
 }
 
 .covid__container {
-  padding: 20px 20px 30px;
-  background: #000;
-  text-align: center;
+	padding: 20px 20px 30px;
+	background: #000;
+	text-align: center;
 }
 
 .covid__title {
-  color: #f11203;
-  font-size: 50px;
-  font-family: "edo_szregular", sans-serif;
+	color: #f11203;
+	font-size: 50px;
+	font-family: "edo_szregular", sans-serif;
 }
 
 .covid__text {
-  font-size: 25px;
-  margin-top: 20px;
+	font-size: 25px;
+	margin-top: 20px;
 }
 
 .covid__image {
-  margin: 0 auto;
-  display: block;
-  width: 1000px;
+	margin: 0 auto;
+	display: block;
+	width: 1000px;
 }
 
 .footer__addressline {
-  display: flex;
-  justify-content: space-evenly;
+	display: flex;
+	justify-content: space-evenly;
 }
 
 .footer__disclaimer {
-  padding: 15px;
+	padding: 15px;
 }
 
 .map__container {
-  margin-top: 20px;
+	margin-top: 20px;
 }
 
 @media (max-width: 768px) {
-  .description__container {
-    margin: 40px 20px;
-  }
-  .description__title h1 {
-    font-size: 30px;
-  }
-  .description__text {
-    display: none;
-  }
-  .tickets-button a {
-    font-size: 40px;
-  }
+	.description__container {
+		margin: 40px 20px;
+	}
+	.description__title h1 {
+		font-size: 30px;
+	}
+	.description__text {
+		display: none;
+	}
+	.tickets-button a {
+		font-size: 40px;
+	}
 
-  .footer__container {
-    display: block;
-  }
-  .footer__addressline {
-    display: block;
-    text-align: center;
-    padding: 15px;
-  }
-  .footer__phone {
-    padding: 15px;
-  }
-  .footer__logoleft {
-    display: none;
-  }
-  .footer__logoright {
-    width: 30%;
-  }
+	.footer__container {
+		display: block;
+	}
+	.footer__addressline {
+		display: block;
+		text-align: center;
+		padding: 15px;
+	}
+	.footer__phone {
+		padding: 15px;
+	}
+	.footer__logoleft {
+		display: none;
+	}
+	.footer__logoright {
+		width: 30%;
+	}
 }
 
 @media (max-width: 992px) {
-  .schedule__container {
-    display: block;
-    justify-content: space-between;
-  }
-  .schedule__mobile {
-    display: block;
-  }
-  .schedule__column-right {
-    display: none;
-  }
-  .schedule__text {
-    margin: 30px auto;
-  }
+	.schedule__container {
+		display: block;
+		justify-content: space-between;
+	}
+	.schedule__mobile {
+		display: block;
+	}
+	.schedule__column-right {
+		display: none;
+	}
+	.schedule__text {
+		margin: 30px auto;
+	}
 }
 
 /*** Tertiary Page Styles ***/
 
 .tertpage__title {
-  font-size: 70px;
-  margin: 30px 0;
-  text-align: center;
-  padding-bottom: 30px;
-  border-bottom: solid 2px #333;
+	font-size: 70px;
+	margin: 30px 0;
+	text-align: center;
+	padding-bottom: 30px;
+	border-bottom: solid 2px #333;
 }
 
 .tertpage__text {
-  font-size: 25px;
-  margin: 30px 0;
-  font-family: "Federo", sans-serif;
-  text-align: center;
+	font-size: 25px;
+	margin: 30px 0;
+	font-family: "Federo", sans-serif;
+	text-align: center;
 }
 
 .tertpage__text a,
 .awards__list a {
-  color: #f11203;
+	color: #f11203;
 }
 
 .paypal-button input {
-  margin: 0 auto 40px;
-  display: block;
-  max-width: 100%;
+	margin: 0 auto 40px;
+	display: block;
+	max-width: 100%;
 }
 
 @media (max-width: 768px) {
-  .tertpage__title {
-    font-size: 50px;
-  }
+	.tertpage__title {
+		font-size: 50px;
+	}
 }
 
 /*** FAQ ***/
 
 .tickets__instruction {
-  font-size: 30px;
-  padding-bottom: 30px;
-  font-family: "Federo", sans-serif;
-  text-align: center;
+	font-size: 30px;
+	padding-bottom: 30px;
+	font-family: "Federo", sans-serif;
+	text-align: center;
 }
 
 .faq__question {
-  color: #f11203;
-  font-size: 30px;
-  margin-top: 60px;
+	color: #f11203;
+	font-size: 30px;
+	margin-top: 60px;
 }
 
 .faq__answer,
 .awards__list {
-  font-size: 22px;
-  margin-top: 20px;
-  font-family: "Federo", sans-serif;
+	font-size: 22px;
+	margin-top: 20px;
+	font-family: "Federo", sans-serif;
 }
 
 .awards__list {
-  list-style-type: circle;
-  padding: 30px;
+	list-style-type: circle;
+	padding: 30px;
 }
 
 .awards__list li {
-  padding: 10px;
+	padding: 10px;
 }
 
 .disclaimer__title {
-  font-size: 30px;
-  margin-top: 60px;
-  font-family: "Federo", sans-serif;
+	font-size: 30px;
+	margin-top: 60px;
+	font-family: "Federo", sans-serif;
 }
 
 .awards__title,
 .schedule__title {
-  font-size: 30px;
-  font-family: "Federo", sans-serif;
+	font-size: 30px;
+	font-family: "Federo", sans-serif;
 }
 
 .awards__subtitle,
 .schedule__subtitle {
-  font-size: 35px;
-  margin-top: 20px;
-  font-family: "Federo", sans-serif;
+	font-size: 35px;
+	margin-top: 20px;
+	font-family: "Federo", sans-serif;
 }
 
 .awards__article-text {
-  padding: 20px;
-  font-size: 25px;
-  line-height: 30px;
-  font-family: "Federo", sans-serif;
+	padding: 20px;
+	font-size: 25px;
+	line-height: 30px;
+	font-family: "Federo", sans-serif;
 }
 
 .awards__images img {
-  height: 200px;
+	height: 200px;
 }
 
 .disclaimer__text {
-  font-size: 20px;
-  margin-top: 20px;
-  font-family: "Federo", sans-serif;
+	font-size: 20px;
+	margin-top: 20px;
+	font-family: "Federo", sans-serif;
 }
 
 #gallery img {
-  height: 275px;
-  object-fit: cover;
-  padding: 5px;
+	height: 275px;
+	object-fit: cover;
+	padding: 5px;
 }
 
 .awards__images {
-  text-align: center;
-  margin-bottom: 20px;
+	text-align: center;
+	margin-bottom: 20px;
 }
 
 .schedulepage__container {
-  font-family: "Federo", sans-serif;
-  text-align: center;
-  margin: 40px auto;
+	font-family: "Federo", sans-serif;
+	text-align: center;
+	margin: 40px auto;
 }
 
 .schedulepage__title {
-  font-size: 40px;
+	font-size: 40px;
 }
 
 .schedulepage__subtitle {
-  font-size: 30px;
+	font-size: 30px;
 }
 
 .schedulepage__image {
-  margin-top: 20px;
+	margin-top: 20px;
 }
 
 .video-responsive {
-  overflow: hidden;
-  padding-bottom: 56.25%;
-  position: relative;
-  height: 0;
+	overflow: hidden;
+	padding-bottom: 56.25%;
+	position: relative;
+	height: 0;
 }
 
 .video-responsive iframe {
-  left: 0;
-  top: 20px;
-  height: 100%;
-  width: 100%;
-  position: absolute;
+	left: 0;
+	top: 20px;
+	height: 100%;
+	width: 100%;
+	position: absolute;
 }
 
 .modal-header {
-  display: none;
+	display: none;
 }
 
 .modal-content {
-  background-color: #000;
+	background-color: #000;
 }
 
 .modal-footer {
-  border-top: 1px solid #000;
+	border-top: 1px solid #000;
 }
 
 @media (max-width: 768px) {
-  .awards__article-text {
-    font-size: 20px;
-  }
+	.awards__article-text {
+		font-size: 20px;
+	}
 }
 
 @media (max-width: 1200px) {
-  .awards__images {
-    display: none;
-  }
+	.awards__images {
+		display: none;
+	}
 }
 
 .announcement__container {
-  max-width: 1400px;
-  background: red;
-  text-align: center;
-  color: black;
-  font-size: 50px;
-  padding: 30px;
-  margin: 0 auto;
+	max-width: 1400px;
+	background: red;
+	text-align: center;
+	color: black;
+	font-size: 50px;
+	padding: 30px;
+	margin: 0 auto;
 }
 
 /*** Product Card ***/
 
 .card__container {
-  display: block;
-  border: 2px solid #555;
-  max-width: 100%;
-  margin: 0 auto;
-  background: rgb(0, 0, 0);
-  background: linear-gradient(
-    90deg,
-    rgba(0, 0, 0, 1) 0%,
-    rgba(45, 45, 45, 1) 23%,
-    rgba(57, 57, 57, 1) 78%,
-    rgba(0, 0, 0, 1) 100%
-  );
-  border-radius: 5px;
-  padding-bottom: 20px;
-  filter: drop-shadow(2px 4px 6px black);
-  margin-top: 50px;
+	display: block;
+	border: 2px solid #555;
+	max-width: 100%;
+	margin: 0 auto;
+	background: rgb(0, 0, 0);
+	background: linear-gradient(
+		90deg,
+		rgba(0, 0, 0, 1) 0%,
+		rgba(45, 45, 45, 1) 23%,
+		rgba(57, 57, 57, 1) 78%,
+		rgba(0, 0, 0, 1) 100%
+	);
+	border-radius: 5px;
+	padding-bottom: 20px;
+	filter: drop-shadow(2px 4px 6px black);
+	margin-top: 50px;
 }
 
 .card__info {
-  padding: 35px 10px 0;
+	padding: 35px 10px 0;
 }
 
 .card__image {
-  max-width: 500px;
-  filter: drop-shadow(2px 4px 6px black);
+	max-width: 500px;
+	filter: drop-shadow(2px 4px 6px black);
 }
 
 .card__image img {
-  max-width: 100%;
-  height: auto;
-  margin-top: -20px;
-  border-radius: 5px;
-  border: 2px solid #555;
-  background-color: #c0c0c0;
+	max-width: 100%;
+	height: auto;
+	margin-top: -20px;
+	border-radius: 5px;
+	border: 2px solid #555;
+	background-color: #c0c0c0;
 }
 
 .product__title {
-  color: #fff;
-  font-size: 35px;
+	color: #fff;
+	font-size: 35px;
 }
 
 .product__price {
-  color: #f11203;
-  font-size: 35px;
-  font-family: "Federo", sans-serif;
-  padding: 5px;
+	color: #f11203;
+	font-size: 35px;
+	font-family: "Federo", sans-serif;
+	padding: 5px;
 }
 
 .product__description {
-  color: #fff;
-  font-size: 20px;
-  padding: 10px;
-  font-family: "Federo", sans-serif;
-  margin-bottom: 10px;
+	color: #fff;
+	font-size: 20px;
+	padding: 10px;
+	font-family: "Federo", sans-serif;
+	margin-bottom: 10px;
 }
 
 form input[type="image"] {
-  max-width: 100%;
+	max-width: 100%;
 }
 
 .card button {
-  border: none;
-  outline: 0;
-  padding: 12px;
-  color: white;
-  background-color: #f11203;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
-  font-size: 18px;
+	border: none;
+	outline: 0;
+	padding: 12px;
+	color: white;
+	background-color: #f11203;
+	text-align: center;
+	cursor: pointer;
+	width: 100%;
+	font-size: 18px;
 }
 
 .card button:hover {
-  opacity: 0.7;
+	opacity: 0.7;
 }
 
 @media (min-width: 768px) {
-  .card__container {
-    display: flex;
-    justify-content: space-around;
-    max-width: 85%;
-    margin-bottom: 50px;
-  }
+	.card__container {
+		display: flex;
+		justify-content: space-around;
+		max-width: 85%;
+		margin-bottom: 50px;
+	}
 
-  .card__info {
-    padding: 35px 35px 0;
-    width: 75%;
-  }
+	.card__info {
+		padding: 35px 35px 0;
+		width: 75%;
+	}
 
-  .card__image {
-    max-width: 500px;
-    filter: drop-shadow(2px 4px 6px black);
-  }
+	.card__image {
+		max-width: 500px;
+		filter: drop-shadow(2px 4px 6px black);
+	}
 
-  .card__image img {
-    max-width: 300px;
-    margin-top: -20px;
-    margin-left: -40px;
-    border-radius: 5px;
-    border: 2px solid #555;
-  }
+	.card__image img {
+		max-width: 300px;
+		margin-top: -20px;
+		margin-left: -40px;
+		border-radius: 5px;
+		border: 2px solid #555;
+	}
 
-  .comingsoon {
-    padding: 75px;
-    font-size: 50px;
-    text-align: center;
-    font-family: "Federo", sans-serif;
-  }
+	.comingsoon {
+		padding: 75px;
+		font-size: 50px;
+		text-align: center;
+		font-family: "Federo", sans-serif;
+	}
 
-  .body__wrapper {
-    padding-bottom: 1px;
-  }
+	.body__wrapper {
+		padding-bottom: 1px;
+	}
 }
 
 /***** Blog Customization *****/
 
 #container {
-  background-color: rgba(0, 0, 0, 0.8);
-  max-width: 1400px;
-  margin: 0 auto;
-  padding: 5px 20px 0;
+	background-color: rgba(0, 0, 0, 0.8);
+	max-width: 1400px;
+	margin: 0 auto;
+	padding: 5px 20px 0;
 }
 
 .author {
-  display: none;
+	display: none;
 }
 
 .entry-title {
-  font-size: 50px;
-  margin: 30px 0;
-  text-align: center;
-  padding-bottom: 30px;
-  border-bottom: solid 2px #333;
+	font-size: 50px;
+	margin: 30px 0;
+	text-align: center;
+	padding-bottom: 30px;
+	border-bottom: solid 2px #333;
 }
 
 .entry-title a,
 .entry-footer span {
-  color: #fff;
+	color: #fff;
 }
 
 .entry-date {
-  color: #fff;
-  font-size: 1.3em;
+	color: #fff;
+	font-size: 1.3em;
 }
 
 .entry-title a:hover {
-  text-decoration: none;
+	text-decoration: none;
 }
 
 .entry-content {
-  font-size: 30px;
-  font-family: "Federo", sans-serif;
+	font-size: 30px;
+	font-family: "Federo", sans-serif;
 }
 
 .entry-content a,
@@ -912,42 +917,42 @@ form input[type="image"] {
 .entry-footer a,
 .nav-previous a,
 .nav-next a {
-  color: #f11203;
+	color: #f11203;
 }
 
 .entry-content p {
-  margin: 20px;
+	margin: 20px;
 }
 
 #sidebar,
 .entry-footer {
-  margin-top: 30px;
+	margin-top: 30px;
 }
 
 .widget-title {
-  font-size: 50px;
-  max-width: 689px;
-  border-bottom: 2px solid #fff;
-  margin-bottom: 20px;
+	font-size: 50px;
+	max-width: 689px;
+	border-bottom: 2px solid #fff;
+	margin-bottom: 20px;
 }
 
 .widget_recent_entries ul {
-  font-size: 30px;
-  margin-bottom: 20px;
+	font-size: 30px;
+	margin-bottom: 20px;
 }
 
 .entry-footer,
 .nav-links {
-  font-size: 25px;
-  margin-bottom: 15px;
+	font-size: 25px;
+	margin-bottom: 15px;
 }
 
 .nav-links {
-  font-size: 20px;
+	font-size: 20px;
 }
 
 @media (min-width: 768px) {
-  .entry-title {
-    font-size: 70px;
-  }
+	.entry-title {
+		font-size: 70px;
+	}
 }
