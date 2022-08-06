@@ -5,7 +5,10 @@
 
 	<!--Buy Tickets-->
 	<div class="tickets-button">
-	  <a href="/tickets">Buy Tickets Online</a>
+		<a href="/tickets">
+			<h3>Buy Tickets Online</h3>
+			<p>(Tickets also available at the gate)</p>
+		</a>
 	</div>
 
 	<!--Video-->
@@ -52,15 +55,18 @@
 	  <div class="schedule__column">
 		<div class="schedule__text">
 		  <div class="schedule__subtitle">2022 EVENT SCHEDULE</div>
-	  <p>We are opening on September 16th, and running every Friday and Saturday night until October 29th</p>
+	  <p>We are opening on September 23rd, and running every Friday and Saturday night until October 29th</p>
 		  <!-- Open Dusk to 12:30AM <br />Fridays and Saturdays starting on
 		  October 2nd
 		  <p>Tickets are <span>$20.00</span> per person.</p> -->
 		</div>
 
 		<div class="tickets-button">
-		  <a href="/tickets">Buy Tickets Online</a>
-		</div>
+		<a href="/tickets">
+			<h3>Buy Tickets Online</h3>
+			<p>(Tickets also available at the gate)</p>
+		</a>
+	</div>
 		<div class="schedule__video">
 		  <iframe width="100%" height="315" src="https://www.youtube.com/embed/ANrp4kdGuhA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 		</div>

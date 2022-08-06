@@ -6,7 +6,10 @@
 
 	<!--Buy Tickets-->
 	<div class="tickets-button">
-		<a href="/tickets">Buy Tickets Online</a>
+		<a href="/tickets">
+			<h3>Buy Tickets Online</h3>
+			<p>(Tickets also available at the gate)</p>
+		</a>
 	</div>
 
 	<!--Haunt Description-->
@@ -20,7 +23,7 @@
 
 		<h2 class="schedulepage__title">Hours: Dusk to 12:30am<h2>
 		<h3 class="schedulepage__subtitle">Fridays and Saturdays starting on
-		  September 16th.</h3>
+		  September 23rd.</h3>
 				<h3 class="schedulepage__subtitle">Tickets available on site during open hours.</h3>
 				<h3 class="schedulepage__subtitle">Purchase tickets online 24/7!</h3>
 
