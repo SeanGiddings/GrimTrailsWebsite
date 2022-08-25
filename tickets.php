@@ -14,7 +14,7 @@
 		</div>
 
 		<div class="tertpage__text">
-		  <p>Tickets can be purchased at the gate or online using paypal</p>
+		  <p>Tickets can be purchased at the Box Office or online using paypal</p>
 
 		<p><br>Still have questions?  Please refer to our F.A.Q.</p>
 		</div>
