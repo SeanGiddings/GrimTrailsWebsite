@@ -692,6 +692,10 @@ span {
 	margin-bottom: 20px;
 }
 
+.awards__images .col-sm-3 {
+	padding: 0;
+}
+
 .schedulepage__container {
 	font-family: "Federo", sans-serif;
 	text-align: center;

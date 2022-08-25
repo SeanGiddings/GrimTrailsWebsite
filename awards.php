@@ -27,13 +27,15 @@
 	</div>
 
 	<div class="row awards__images">
-	  <div class="col-sm-4 col-sm-offset-1"><img class="awards__image" src="<?php echo get_stylesheet_directory_uri(); ?>/images/awards-1.png" alt=""></div>
-	  <div class="col-sm-4 col-sm-offset-1"><img class="awards__image" src="<?php echo get_stylesheet_directory_uri(); ?>/images/awards-2.png" alt=""></div>
-	  <div class="col-sm-4"><img class="awards__image" src="<?php echo get_stylesheet_directory_uri(); ?>/images/awards-3.png" alt=""></div>
+	  <div class="col-sm-3 "><img class="awards__image" src="<?php echo get_stylesheet_directory_uri(); ?>/images/awards-4.png" alt=""></div>
+	  <div class="col-sm-3 "><img class="awards__image" src="<?php echo get_stylesheet_directory_uri(); ?>/images/awards-1.png" alt=""></div>
+	  <div class="col-sm-3 "><img class="awards__image" src="<?php echo get_stylesheet_directory_uri(); ?>/images/awards-2.png" alt=""></div>
+	  <div class="col-sm-3"><img class="awards__image" src="<?php echo get_stylesheet_directory_uri(); ?>/images/awards-3.png" alt=""></div>
 	</div>
 
 	<h2 class="awards__title awards__list-title">In just six years, Grim Trails has piled on 25+ awards, earning national recognition in addition to becoming a local Halloween staple.</h2>
 	<ul class="awards__list">
+	  <li>2020 Hauntfinder General's Top 5 Haunted House Nationally, #1 Haunted Trail, #2 Most Unique Attraction.</li>
 	  <li>2018 Top Ten Haunt in Kentucky from <a href="#" target="_blank">TheScareFactor.com</a></li>
 	  <li>2018, 2017, 2016, 2015, 2014, and 2013 Louisville Halloween Top Haunted Attraction</li>
 	  <li>2018 Featured Haunted House on <a href="https://www.kentuckyhauntedhouses.com/" target="_blank">KentuckyHauntedHouse.com</a></li>
