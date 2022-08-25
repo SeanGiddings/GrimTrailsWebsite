@@ -8,7 +8,7 @@
 		 <div class="tickets-button">
 		<a href="/tickets">
 			<h3>Buy Tickets Online</h3>
-			<p>(Tickets also available at the Box Office)</p>
+			<p>(Also available at the Box Office)</p>
 		</a>
 	</div>
 	  <!--Gallery-->
