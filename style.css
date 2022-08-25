@@ -441,7 +441,8 @@ body {
 }
 
 .schedule__column-right {
-	margin: 0 30px;
+	margin: 0 0 0 20px;
+	width: 50%;
 }
 
 .schedule__mobile {

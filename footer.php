@@ -35,7 +35,7 @@
 		Grim Trails Haunted Attraction<br>
 		<a href="https://goo.gl/maps/euuepqihDtuw3ejV8" target="_blank">
 		  2600 Freys Hill Rd<br>
-		  Louisville, KY 40223<br>
+		  Louisville, KY 40241<br>
 		</a>
 	  </div>
 	  <div class="footer__socialmedia">

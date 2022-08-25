@@ -27,9 +27,9 @@
   <div class="col-12 col-sm-6 col-lg-3">
 	<img class="w-100" src="<?php echo get_stylesheet_directory_uri(); ?>/images/4.jpg" data-target="#carouselExample" data-slide-to="3">
   </div>
-  <div class="col-12 col-sm-6 col-lg-3">
+  <!-- <div class="col-12 col-sm-6 col-lg-3">
 	<img class="w-100" src="<?php echo get_stylesheet_directory_uri(); ?>/images/5.jpg" data-target="#carouselExample" data-slide-to="3">
-  </div>
+  </div> -->
   <div class="col-12 col-sm-6 col-lg-3">
 	<img class="w-100" src="<?php echo get_stylesheet_directory_uri(); ?>/images/6.jpg" data-target="#carouselExample" data-slide-to="3">
   </div>
