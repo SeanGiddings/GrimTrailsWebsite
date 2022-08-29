@@ -735,6 +735,14 @@ span {
 
 .modal-content {
 	background-color: #000;
+	/* height: 90vh;
+	width: max-content;
+	margin: 0 auto; */
+}
+
+.modal.show .modal-dialog {
+	max-width: 650px;
+	margin: 1.75rem auto;
 }
 
 .modal-footer {
