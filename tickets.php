@@ -14,11 +14,11 @@
 		</div>
 
 		<div class="tertpage__text">
-		  <p>Tickets can be purchased at the gate or online using paypal</p>
+		  <p>Tickets can be purchased at the Box Office or online, below</p>
 
-		<p><br>Still have questions?  Please refer to our F.A.Q.</p>
+		<p><br>Still have questions?  Please refer to our <a href="/faq">F.A.Q.</a></p>
 		</div>
-		<div class="paypal-button">
+		<!-- <div class="paypal-button">
 		<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
 			<input type="hidden" name="cmd" value="_cart">
 			<input type="hidden" name="business" value="grimtrails01@gmail.com">
@@ -33,10 +33,16 @@
 			<input type="image" src="<?php echo get_stylesheet_directory_uri(); ?>/images/paypalcheckout-60px.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
 			<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
 			</form>
-		</div> 
-		<div class="tickets__instruction">
+		</div>  -->
+		<div class="tickets-button">
+		<a target="_blank" href="https://grimtrails.fearticket.com/event/orderticket/eventid/1153">
+			<h3>Buy Tickets Online</h3>
+			<p>(Also available at the Box Office)</p>
+		</a>
+	</div>
+		<!-- <div class="tickets__instruction">
 		  <p>Print out the paypal invoice and present it to the ticket handler.</p>
-		</div>
+		</div> -->
 		<div class="map__container">
 	  <iframe src="https://www.google.com/maps/d/embed?mid=1q0bMNj8vJKeLI3YxUI7-tqP0_vZrOYY&ehbc=2E312F" width="100%" height="450" frameborder="0" style="border: 0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 	</div>

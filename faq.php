@@ -6,9 +6,9 @@
 
 	  <!--Buy Tickets-->
 	  <div class="tickets-button">
-		<a href="/tickets">
+		<a target="_blank" href="https://grimtrails.fearticket.com/event/orderticket/eventid/1153">
 			<h3>Buy Tickets Online</h3>
-			<p>(Tickets also available at the gate)</p>
+			<p>(Also available at the Box Office)</p>
 		</a>
 	</div>
 
@@ -22,9 +22,7 @@
 
 		<div class="tertpage__text">
 		  <p>
-			If you've read the F.A.Q. below, but still have questions, or want
-			to contact us about something else, please send us an email and
-			we'll help you with anything you need.
+		  If you've read the FAQ below, and still have questions, or need to contact us about something else, please send us an email (to <a href="mailto: grimtrailsha@gmail.com">grimtrailsha@gmail.com</a>) and we'll get back to you shortly."
 		  </p>
 		</div>
 
@@ -48,7 +46,7 @@
 			While we believe Halloween is for everyone, we do not recommend our
 			haunted trail for children under 10 due to the fright factor.
 			Children under the age of 10 will receive the same terrifying show
-			as any other patron for the same price.
+			as any other patron for the same price. No strollers will be permitted into the attraction.
 		  </p>
 
 		  <h2 class="faq__question">
@@ -65,24 +63,32 @@
 			Does your haunted house have security?
 		  </h2>
 		  <p class="faq__answer">
-			Yes! We utilize a metal detector for the safety of our staff and guests. Also, we have Security present at all times when the attraction is open.
+			Yes! All guests must pass through a walkthrough metal detector for the safety of our staff and guests. We also have security present at all times when the attraction is open.
+		  </p>
+
+		  <h2 class="faq__question">
+			What Items Are Not Allowed Inside?
+		  </h2>
+		  <p class="faq__answer">
+			No weapons of any kind, lighters, matches, e-cigarettes, backpacks, purses larger than 12"x12", beverages, cameras, photography equipment, Halloween masks or costumes will be permitted. 
+			Bags and purses will be subject to search. Any guest in a costume or Halloween mask will be asked to leave.
 		  </p>
 
 		  <h2 class="faq__question">
 			Is it different from last year?
 		  </h2>
 		  <p class="faq__answer">
-			During the ten months of the year that we are closed, we endlessly
-			renovate and add new scenes designed to scare and excite. Follow us
-			on Facebook and Instagram for sneak peeks of everything we’re
-			dishing up this year.
+		  Absolutely! Our 2022 trail is in an all-new location, with a brand-new trail, layout, 
+		  and a never-before-seen selection of scenes designed to scare and excite. 
+		  Follow us on Facebook and Instagram for sneak peeks of everything we're dishing up this year.
 		  </p>
 
 		  <h2 class="faq__question">
 			What form of payment do you accept
 		  </h2>
 		  <p class="faq__answer">
-			We accept cash, Visa, MasterCard and Discover. Paypal as well!
+		  We accept cash, Visa, Mastercard and Discover. 
+		  We also have an ATM on site for your convenience.
 		  </p>
 
 		  <h2 class="faq__question">

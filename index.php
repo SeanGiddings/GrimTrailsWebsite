@@ -5,9 +5,9 @@
 
 	<!--Buy Tickets-->
 	<div class="tickets-button">
-		<a href="/tickets">
+		<a target="_blank" href="https://grimtrails.fearticket.com/event/orderticket/eventid/1153">
 			<h3>Buy Tickets Online</h3>
-			<p>(Tickets also available at the gate)</p>
+			<p>(Also available at the Box Office)</p>
 		</a>
 	</div>
 
@@ -23,10 +23,11 @@
 	<div class="description__container">
 	  <div class="description__title">
 	  <h1 class="description__banner">
-		  Grim Trails is on the move in 2022 to Tom Sawyer Park!
+		  Grim Trails has moved!
 		  <br><br>
-		  Grim Trails is building our largest haunted attraction to date. We are going from 4 acres to 20 acres, 
-		  and will now be located at <a href="https://goo.gl/maps/euuepqihDtuw3ejV8" target="_blank"><br>2600 Freys Hill Rd<br>Louisville, KY 40241<br></a> in Tom Sawyer Park.
+		  We have expanded onto 20 acres in EP Tom Sawyer State Park for our largest show yet. Our new lair is located at 
+		  <a href="https://goo.gl/maps/euuepqihDtuw3ejV8" target="_blank"><br>2600 Freys Hill Rd<br>Louisville, KY 40241<br></a>
+		  (across from the BMX track)
 		</h1>
 		<br><br>
 		<h1>
@@ -37,13 +38,10 @@
 		</h1>
 	  </div>
 	  <div class="description__text">
-		Venture into the lair of the elusive Yeti, explore Bluebeard’s
-		murderous manor, and journey to Transylvania to catch a glimpse of
-		Count Dracula himself. Our 3/4 of a mile-long haunted trail is not for
-		the faint of heart! Grim Trails is a Louisville Halloween Top Haunt
-		six years running, in addition to being ranked among Kentucky’s
-		premier haunted houses and is a must-see attraction in the Jefferson
-		County area.
+		For 2022, we've built an entirely new trail, featuring both fan-favorite and freshly unearthed scenes! 
+		Creep into the Witch's Candy Cottage, wander the wicked woods of the Wendigo, and face a string of frights in Gepetto's workshop. 
+		Our 1/2 mile-long trail is not for the faint of heart! 
+		See for yourself why we are one of Kentucky's best haunted houses, in both local ranking and national awards.
 	  </div>
 	</div>
 
@@ -55,28 +53,33 @@
 	  <div class="schedule__column">
 		<div class="schedule__text">
 		  <div class="schedule__subtitle">2022 EVENT SCHEDULE</div>
-	  <p>We are opening on September 23rd, and running every Friday and Saturday night until October 29th</p>
+	  <p>We are open every Friday and Saturday nights from 8:00 PM to Midnight September 23rd through October 29th.</p>
 		  <!-- Open Dusk to 12:30AM <br />Fridays and Saturdays starting on
 		  October 2nd
 		  <p>Tickets are <span>$20.00</span> per person.</p> -->
 		</div>
-
+		</br></br>
+		<div class="schedule__row">
+		<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/2022-calendar-wide.png" class="schedule__image img-fluid" />
+	  </div>
+	  </br></br>
 		<div class="tickets-button">
-		<a href="/tickets">
+		<a target="_blank" href="https://grimtrails.fearticket.com/event/orderticket/eventid/1153">
 			<h3>Buy Tickets Online</h3>
-			<p>(Tickets also available at the gate)</p>
+			<p>(Also available at the Box Office)</p>
 		</a>
 	</div>
 		<div class="schedule__video">
-		  <iframe width="100%" height="315" src="https://www.youtube.com/embed/ANrp4kdGuhA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		  <iframe width="100%" height="315" src="https://www.youtube.com/embed/cP28lbBz-3Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 		</div>
 	  </div>
 	  <div class="schedule__column schedule__column-right">
-		<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/1_homepage.png" class="schedule__image img-fluid" />
+		<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/1_tall.png" class="schedule__image img-fluid" />
+		<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/3.png" class="schedule__image img-fluid" />
 	  </div>
 	</div>
 
-	<!--Tour Info-->
+	<!-- Tour Info
 	<div class="tour__container">
 	  <h3 class="tour__info">
 		  Want to see the Haunted Trail without the scares? 
@@ -85,7 +88,7 @@
 		  We offer behind-the-scenes tours all month.
 		  Admission is $10 per person. Please call <a href="tel:502-594-7624" target="_blank">502-594-7624</a> to schedule an appointment, or for more information.
 	  </h4>
-	</div>
+	</div> -->
 
 	<!--Map-->
 	<div class="map__container">

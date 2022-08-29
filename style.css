@@ -441,7 +441,8 @@ body {
 }
 
 .schedule__column-right {
-	margin: 0 30px;
+	margin: 0 0 0 20px;
+	width: 50%;
 }
 
 .schedule__mobile {
@@ -691,6 +692,10 @@ span {
 	margin-bottom: 20px;
 }
 
+.awards__images .col-sm-3 {
+	padding: 0;
+}
+
 .schedulepage__container {
 	font-family: "Federo", sans-serif;
 	text-align: center;
@@ -730,6 +735,14 @@ span {
 
 .modal-content {
 	background-color: #000;
+	/* height: 90vh;
+	width: max-content;
+	margin: 0 auto; */
+}
+
+.modal.show .modal-dialog {
+	max-width: 650px;
+	margin: 1.75rem auto;
 }
 
 .modal-footer {
