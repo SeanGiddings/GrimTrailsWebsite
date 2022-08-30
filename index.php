@@ -25,7 +25,7 @@
 	  <h1 class="description__banner">
 		  Grim Trails has moved!
 		  <br><br>
-		  We have expanded onto 20 acres in EP Tom Sawyer State Park for our largest show yet. Our new lair is located at 
+		  As the longest walkthrough attraction in Louisville, we have expanded onto 20 acres in EP Tom Sawyer State Park for our largest show yet. Our new lair is located at 
 		  <a href="https://goo.gl/maps/euuepqihDtuw3ejV8" target="_blank"><br>2600 Freys Hill Rd<br>Louisville, KY 40241<br></a>
 		  (across from the BMX track)
 		</h1>
@@ -40,7 +40,7 @@
 	  <div class="description__text">
 		For 2022, we've built an entirely new trail, featuring both fan-favorite and freshly unearthed scenes! 
 		Creep into the Witch's Candy Cottage, wander the wicked woods of the Wendigo, and face a string of frights in Gepetto's workshop. 
-		Our 1/2 mile-long trail is not for the faint of heart! 
+		We are the longest walkthrough attraction in town--our 1/2 mile-long trail is not for the faint of heart! 
 		See for yourself why we are one of Kentucky's best haunted houses, in both local ranking and national awards.
 	  </div>
 	</div>
