@@ -357,6 +357,23 @@ body {
 	text-decoration: none;
 }
 
+@media (max-width: 768px) {
+	.tickets-button a h3 {
+		color: #f11203;
+		font-size: 32px;
+	}
+
+	.tickets-button a p {
+		color: #f11203;
+		font-size: 15px;
+	}
+
+	.tickets-button a h3:hover {
+		font-size: 34px;
+		text-decoration: none;
+	}
+}
+
 .description__container {
 	margin: 50px 50px;
 	text-align: center;
@@ -401,8 +418,8 @@ body {
 	.description__text {
 		display: none;
 	}
-	.tickets-button a h3 {
-		font-size: 40px;
+	.description__banner {
+		padding: 20px 10px;
 	}
 	.footer__addressline {
 		display: block;
@@ -543,6 +560,10 @@ span {
 	}
 	.tickets-button a {
 		font-size: 40px;
+	}
+
+	.tickets-button {
+		padding: 10px 0;
 	}
 
 	.footer__container {
@@ -769,6 +790,12 @@ span {
 	font-size: 50px;
 	padding: 30px;
 	margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+	.announcement__container {
+		font-size: 30px;
+	}
 }
 
 /*** Product Card ***/
