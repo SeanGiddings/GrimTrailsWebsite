@@ -70,8 +70,9 @@
 			What Items Are Not Allowed Inside?
 		  </h2>
 		  <p class="faq__answer">
-			No weapons of any kind, lighters, matches, e-cigarettes, backpacks, purses larger than 12"x12", beverages, cameras, photography equipment, Halloween masks or costumes will be permitted. 
-			Bags and purses will be subject to search. Any guest in a costume or Halloween mask will be asked to leave.
+		  No weapons of any kind, lighters, matches, e-cigarettes, backpacks, umbrellas, purses larger than 12"x12", beverages, cameras, photography equipment. 
+		  Halloween masks or costumes will not be permitted. Bags and purses will be subject to search. 
+		  Any guest in a costume or Halloween mask will be asked to leave.
 		  </p>
 
 		  <h2 class="faq__question">
