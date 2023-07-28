@@ -53,14 +53,14 @@
 	  <div class="schedule__column">
 		<div class="schedule__text">
 		  <div class="schedule__subtitle">2022 EVENT SCHEDULE</div>
-	  <p>We are open every Friday and Saturday nights from 8:00 PM to Midnight September 23rd through October 29th.</p>
+	  <p>We are open every Friday and Saturday from 8:00 PM to Midnight </br>September 22nd through October 28th.</p>
 		  <!-- Open Dusk to 12:30AM <br />Fridays and Saturdays starting on
 		  October 2nd
 		  <p>Tickets are <span>$20.00</span> per person.</p> -->
 		</div>
 		</br></br>
 		<div class="schedule__row">
-		<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/2022-calendar-wide.png" class="schedule__image img-fluid" />
+		<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/2023-calendar-wide.png" class="schedule__image img-fluid" />
 	  </div>
 	  </br></br>
 		<div class="tickets-button">
