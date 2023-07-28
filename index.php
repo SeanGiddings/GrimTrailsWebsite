@@ -52,7 +52,7 @@
 	  </div>
 	  <div class="schedule__column">
 		<div class="schedule__text">
-		  <div class="schedule__subtitle">2022 EVENT SCHEDULE</div>
+		  <div class="schedule__subtitle">2023 EVENT SCHEDULE</div>
 	  <p>We are open every Friday and Saturday from 8:00 PM to Midnight </br>September 22nd through October 28th.</p>
 		  <!-- Open Dusk to 12:30AM <br />Fridays and Saturdays starting on
 		  October 2nd
