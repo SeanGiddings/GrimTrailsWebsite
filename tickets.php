@@ -35,7 +35,7 @@
 			</form>
 		</div>  -->
 		<div class="tickets-button">
-		<a target="_blank" href="https://grimtrails.fearticket.com/event/orderticket/eventid/1153">
+		<a target="_blank" href="https://grimtrails.fearticket.com/event/orderticket/eventid/1468">
 			<h3>Buy Tickets Online</h3>
 			<p>(Also available at the Box Office)</p>
 		</a>
