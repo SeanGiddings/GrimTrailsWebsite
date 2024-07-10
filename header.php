@@ -74,7 +74,7 @@
 		<!--Logo-->
 
 		<a class="header__brand img-fluid" href="/">
-		  <img id="logo" class="header__logo header__logo-desktop" src="<?php echo get_stylesheet_directory_uri(); ?>/images/witchlogo.png" alt="Grim Trails Haunted House Logo" aria-label="Grim Trails Haunted House Logo" />
+		  <img id="logo" class="header__logo header__logo-desktop" src="<?php echo get_stylesheet_directory_uri(); ?>/images/witchlogo.webp" alt="Grim Trails Haunted House Logo" aria-label="Grim Trails Haunted House Logo" />
 		  <!--<img id="logo" class="header__logo header__logo-mobile" src="<?php echo get_stylesheet_directory_uri(); ?>/images/logomobile.png" alt="Grim Trails Haunted House Logo" aria-label="Grim Trails Haunted House Logo" />
 			-->
 		</a>

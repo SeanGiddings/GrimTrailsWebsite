@@ -274,7 +274,7 @@ section {
 body {
 	font-family: Arial, Helvetica, sans-serif;
 	background-color: #eee;
-	background: #000 url("images/bg.jpg");
+	background: #000 url("images/bg.webp");
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
@@ -542,6 +542,9 @@ span {
 
 .footer__disclaimer {
 	padding: 15px;
+	#year {
+		color: #fff;
+	}
 }
 
 .map__container {
@@ -706,6 +709,37 @@ span {
 	height: 275px;
 	object-fit: cover;
 	padding: 5px;
+}
+
+/* Instagram Feed Customization */
+
+.sbi_feedtheme_header_text {
+	color:#f11203
+}
+
+.sb_instagram_header .sbi_header_hashtag_icon {
+    background-color: darkred;
+}
+
+#sb_instagram .sbi_follow_btn a {
+	background-color: darkred !important;
+	span {
+    	color: #fff;
+	}
+}
+
+#sb_instagram .sbi_follow_btn a:hover, #sb_instagram .sbi_follow_btn a:focus {
+    outline: none;
+    box-shadow: inset 0 0 10px 20px #5A0000;
+}
+
+#sb_instagram #sbi_load .sbi_load_btn {
+    background: #494949;
+}
+
+#sb_instagram #sbi_load .sbi_load_btn:hover {
+	background: #333;
+	box-shadow: none;
 }
 
 .awards__images {

@@ -50,10 +50,13 @@
 		  </div>
 	</div>
 	<div class="footer__disclaimer">
-	  All content copyright Grim Trails Haunted House and Attractions |
-	  Louisville Kentucky's Scariest Haunted Attractions © 2020 • All rights
-	  reserved.
-	</div>
+          All content copyright Grim Trails Haunted House and Attractions |
+          Louisville Kentucky's Scariest Haunted Attractions © <span id="year"></span> • All rights
+          reserved.
+        </div>
+        <script>
+          document.getElementById("year").textContent = new Date().getFullYear();
+      </script>
 </div>
 	<img
 		id="footerlogo2"

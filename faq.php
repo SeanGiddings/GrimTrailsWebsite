@@ -89,7 +89,6 @@
 		  </h2>
 		  <p class="faq__answer">
 		  We accept cash, Visa, Mastercard and Discover. 
-		  We also have an ATM on site for your convenience.
 		  </p>
 
 		  <h2 class="faq__question">
@@ -136,7 +135,7 @@
 		</div>
 	  </div>
 	  <div class="map__container">
-	  <iframe src="https://www.google.com/maps/d/embed?mid=1q0bMNj8vJKeLI3YxUI7-tqP0_vZrOYY&ehbc=2E312F" width="100%" height="450" frameborder="0" style="border: 0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+	  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12527.500407536967!2d-85.552195!3d38.282388!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8869a190dd2db409%3A0x2a883abdca7cee7c!2sGrim%20Trails%20Haunted%20Attraction!5e0!3m2!1sen!2sus!4v1720624291768!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 	</div>
 </div>
 
