@@ -23,8 +23,6 @@
 	<div class="description__container">
 	  <div class="description__title">
 	  <h1 class="description__banner">
-		  Grim Trails has moved!
-		  <br><br>
 		  As the longest walkthrough attraction in Louisville, we have expanded onto 20 acres in EP Tom Sawyer State Park for our largest show yet. Our new lair is located at 
 		  <a href="https://goo.gl/maps/euuepqihDtuw3ejV8" target="_blank"><br>2600 Freys Hill Rd<br>Louisville, KY 40241<br></a>
 		  (across from the BMX track)
@@ -52,15 +50,15 @@
 	  </div>
 	  <div class="schedule__column">
 		<div class="schedule__text">
-		  <div class="schedule__subtitle">2023 EVENT SCHEDULE</div>
-	  <p>We are open every Friday and Saturday from 8:00 PM to Midnight </br>September 22nd through October 28th.</p>
+		  <div class="schedule__subtitle">2024 EVENT SCHEDULE</div>
+	  <p>We are open every Friday and Saturday from 8:00 PM to Midnight </br>September 13th through November 2nd.</p>
 		  <!-- Open Dusk to 12:30AM <br />Fridays and Saturdays starting on
 		  October 2nd
 		  <p>Tickets are <span>$20.00</span> per person.</p> -->
 		</div>
 		</br></br>
 		<div class="schedule__row">
-		<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/2023-calendar-wide.png" class="schedule__image img-fluid" />
+		<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/2024-calendar-wide.webp" class="schedule__image img-fluid" />
 	  </div>
 	  </br></br>
 		<div class="tickets-button">
@@ -92,6 +90,6 @@
 
 	<!--Map-->
 	<div class="map__container">
-	  <iframe src="https://www.google.com/maps/d/embed?mid=1q0bMNj8vJKeLI3YxUI7-tqP0_vZrOYY&ehbc=2E312F" width="100%" height="450" frameborder="0" style="border: 0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+	  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12527.500407536967!2d-85.552195!3d38.282388!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8869a190dd2db409%3A0x2a883abdca7cee7c!2sGrim%20Trails%20Haunted%20Attraction!5e0!3m2!1sen!2sus!4v1720624291768!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 	</div>
 	<?php get_footer(); ?>
