@@ -658,6 +658,9 @@ span {
 	font-size: 22px;
 	margin-top: 20px;
 	font-family: "Federo", sans-serif;
+	a {
+		color: #f11203;
+	}
 }
 
 .awards__list {
@@ -1032,4 +1035,97 @@ form input[type="image"] {
 	.entry-title {
 		font-size: 70px;
 	}
+}
+
+/* Form Container */
+.form__container {
+    padding: 20px;
+    background-color: rgba(46, 46, 46, 0.8);
+    border-radius: 5px;
+}
+
+/* Form Field Labels */
+.wpforms-field-label {
+	font-family: "Federo", sans-serif;
+    color: #f11203 !important; /* White text color */
+    font-size: 24px !important;
+    margin-bottom: 10px!important;
+    display: block;
+}
+
+/* Form Required Label */
+.wpforms-required-label {
+    color: #f11203 !important; /* Distinctive color for required fields */
+}
+
+/* Form Input Fields */
+.wpforms-field input[type="text"],
+.wpforms-field input[type="email"],
+.wpforms-field input[type="tel"],
+.wpforms-field textarea,
+.wpforms-field select,
+.wpforms-field input[type="range"] {
+    background-color: #333; /* Light background for visibility */
+    color: #fff !important; /* White text color */
+    font-size: 16px; /* Standard font size */
+    padding: 10px;
+    border: 1px solid #555 !important;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+}
+
+/* Radio Button Labels */
+.wpforms-field-radio ul li label, .wpforms-field-number-slider-hint {
+    color: #fff !important;
+    font-size: 16px;
+    margin-left: 5px;
+}
+
+.wpforms-field-number-slider-hint, b, .wpforms-field-label-inline {
+    color: #fff !important;
+    font-size: 20px !important;
+    margin-left: 5px;
+	font-family: "Federo", sans-serif;
+}
+
+
+/* Form Radio Buttons */
+.wpforms-field-radio input[type="radio"] {
+    margin-right: 5px;
+}
+
+/* Submit Button */
+.wpforms-submit {
+    background-color: #f11203 !important;
+    color: #fff !important;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+}
+
+.wpforms-submit:hover {
+    background-color: #d10d02 !important;
+}
+
+/* Description Text */
+.wpforms-field-description {
+    color: #ccc !important;
+	font-family: "Federo", sans-serif;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+div.wpforms-container-full button[type=submit]:hover {
+	background-color: #d10d02 !important;
+}
+
+div.wpforms-container-full input[type=date], div.wpforms-container-full input[type=datetime], div.wpforms-container-full input[type=datetime-local], div.wpforms-container-full input[type=email], div.wpforms-container-full input[type=month], div.wpforms-container-full input[type=number], div.wpforms-container-full input[type=password], div.wpforms-container-full input[type=range], div.wpforms-container-full input[type=search], div.wpforms-container-full input[type=tel], div.wpforms-container-full input[type=text], div.wpforms-container-full input[type=time], div.wpforms-container-full input[type=url], div.wpforms-container-full input[type=week], div.wpforms-container-full select, div.wpforms-container-full textarea, .wp-core-ui div.wpforms-container-full input[type=date], .wp-core-ui div.wpforms-container-full input[type=datetime], .wp-core-ui div.wpforms-container-full input[type=datetime-local], .wp-core-ui div.wpforms-container-full input[type=email], .wp-core-ui div.wpforms-container-full input[type=month], .wp-core-ui div.wpforms-container-full input[type=number], .wp-core-ui div.wpforms-container-full input[type=password], .wp-core-ui div.wpforms-container-full input[type=range], .wp-core-ui div.wpforms-container-full input[type=search], .wp-core-ui div.wpforms-container-full input[type=tel], .wp-core-ui div.wpforms-container-full input[type=text], .wp-core-ui div.wpforms-container-full input[type=time], .wp-core-ui div.wpforms-container-full input[type=url], .wp-core-ui div.wpforms-container-full input[type=week], .wp-core-ui div.wpforms-container-full select, .wp-core-ui div.wpforms-container-full textarea {
+	font-family: sans-serif;
+	color: #000 !important;
 }

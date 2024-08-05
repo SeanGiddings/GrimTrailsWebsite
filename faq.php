@@ -43,10 +43,9 @@
 			What age groups are appropriate?
 		  </h2>
 		  <p class="faq__answer">
-			While we believe Halloween is for everyone, we do not recommend our
-			haunted trail for children under 10 due to the fright factor.
-			Children under the age of 10 will receive the same terrifying show
-			as any other patron for the same price. No strollers will be permitted into the attraction.
+		  While we believe Halloween is for everyone, we do not recommend our haunted trail for children under 10 due to 
+		  the fright factor. Children under the age of 10 will receive the same terrifying show as any other patron for the same price. 
+		  No strollers will be permitted into the attraction. Guests under the age of 16 must be accompanied by an adult. 
 		  </p>
 
 		  <h2 class="faq__question">
@@ -79,9 +78,8 @@
 			Is it different from last year?
 		  </h2>
 		  <p class="faq__answer">
-		  Absolutely! Our 2022 trail is in an all-new location, with a brand-new trail, layout, 
-		  and a never-before-seen selection of scenes designed to scare and excite. 
-		  Follow us on Facebook and Instagram for sneak peeks of everything we're dishing up this year.
+			Absolutely! As the longest walkthrough attraction in Louisville, we're continually revamping and adding to our 1/2 mile-long trail. 
+			Follow us on <a href="https://www.facebook.com/GrimTrails/" target="_blank">Facebook</a> and <a href="https://www.instagram.com/grimtrails" target="_blank">Instagram</a> for sneak peeks of everything we're dishing up this year.
 		  </p>
 
 		  <h2 class="faq__question">
@@ -118,6 +116,21 @@
 		  </h2>
 		  <p class="faq__answer">
 			Grim Trails is an outdoor haunt, so closed-toed shoes are recommended. You might encounter roots, rocks, or muddy conditions!
+		  </p>
+		  <h2 class="faq__question">
+			I want to do a story on the attractions, who do I contact?
+		  </h2>
+		  <p class="faq__answer">
+			For media inquiries:<br>
+			ATTN: Michael Coombs<br>
+			<a href="mailto:grimtrailsha@gmail.com">grimtrailsha@gmail.com</a><br>
+			ph: <a href="tel:+15026494149">502.649.4149</a>
+		  </p>
+		  <h2 class="faq__question">
+		    Are you hiring? How do I apply to work here?
+		  </h2>
+		  <p class="faq__answer">
+			We ARE accepting applications, you are welcome to apply <a href="/hiring">here</a>.
 		  </p>
 		</div>
 		<div class="disclaimer__container">
