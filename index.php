@@ -29,17 +29,16 @@
 		</h1>
 		<br><br>
 		<h1>
-		  Grim Trails Haunted Attraction plunges you deep into the dark,
-		  twisted, and spooky world of fairy-tales and folklore.
+		Grim Trails Haunted Attraction plunges you deep into the dark, twisted, and spooky world of fairy-tales and folklore. 
 		  <!-- <br><br>
 		  Over 92,000 square feet of outdoor terror! -->
 		</h1>
 	  </div>
 	  <div class="description__text">
-		For 2022, we've built an entirely new trail, featuring both fan-favorite and freshly unearthed scenes! 
-		Creep into the Witch's Candy Cottage, wander the wicked woods of the Wendigo, and face a string of frights in Gepetto's workshop. 
-		We are the longest walkthrough attraction in town--our 1/2 mile-long trail is not for the faint of heart! 
-		See for yourself why we are one of Kentucky's best haunted houses, in both local ranking and national awards.
+	  We take pride in raising up long-dead monsters and sinister legends spanning history from across the globe. 
+	  These are not your mother’s bedtime stories! Whether you’re looking for a spooky date night, 
+	  fright for the whole family, or a solo adventure: we’ve got you covered. See for yourself why we are one of 
+	  Kentucky's best haunted houses, according to reviews from both customers and experts near and far. 
 	  </div>
 	</div>
 
