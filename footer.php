@@ -86,6 +86,27 @@
 </footer>
 </div>
 <?php wp_footer(); ?>-->
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const stickyButton = document.getElementById("homepage-tickets-button");
+    const sentinel = document.getElementById("tickets-sentinel");
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (!entry.isIntersecting) {
+          stickyButton.classList.add("is-stuck");
+        } else {
+          stickyButton.classList.remove("is-stuck");
+        }
+      },
+      { threshold: 0 }
+    );
+
+    observer.observe(sentinel);
+  });
+</script>
+
+
   </body>
 
   </html>

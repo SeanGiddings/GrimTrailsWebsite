@@ -3,12 +3,15 @@
 
   <div class="body__wrapper">
 
+	<!-- Sentinel to track scroll position -->
+	<div id="tickets-sentinel"></div>
+
 	<!--Buy Tickets-->
-	<div class="tickets-button">
-		<a target="_blank" href="https://grimtrails.fearticket.com/frontapp">
-			<h3>Buy Tickets Online</h3>
-			<p>(Also available at the Box Office)</p>
-		</a>
+	<div id="homepage-tickets-button" class="tickets-button">
+	<a target="_blank" href="https://grimtrails.fearticket.com/frontapp">
+		<h3>Buy Tickets Online</h3>
+		<p>(Also available at the Box Office)</p>
+	</a>
 	</div>
 
 	<!--Video-->
@@ -40,6 +43,9 @@
 	  fright for the whole family, or a solo adventure: we’ve got you covered. See for yourself why we are one of 
 	  Kentucky's best haunted houses, according to reviews from both customers and experts near and far. 
 	  </div>
+	  <div class="description__text">
+	  <a href="https://grimtrails.com/faq/">Click here for more information and Frequently Asked Questions</a>
+	  </div>
 	</div>
 
 	<!--Event Schedule Blocks-->
@@ -49,16 +55,16 @@
 	  </div>
 	  <div class="schedule__column">
 		<div class="schedule__text">
-		  <div class="schedule__subtitle">2024 EVENT SCHEDULE</div>
-	  <p>We are open every Friday and Saturday from 8:00 PM to Midnight </br>September 13th through November 2nd.</p>
+		  <div class="schedule__subtitle">2025 EVENT SCHEDULE</div>
+	  <p>We are open every Friday and Saturday from 8:00 PM to Midnight </br>September 19th through November 1st.</p>
 		  <!-- Open Dusk to 12:30AM <br />Fridays and Saturdays starting on
 		  October 2nd
 		  <p>Tickets are <span>$20.00</span> per person.</p> -->
 		</div>
 		</br></br>
-		<div class="schedule__row">
+		<!-- <div class="schedule__row">
 		<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/2024-calendar-wide.webp" class="schedule__image img-fluid" />
-	  </div>
+	  </div> -->
 	  </br></br>
 		<div class="tickets-button">
 		<a target="_blank" href="https://grimtrails.fearticket.com/frontapp">
@@ -70,10 +76,10 @@
 		  <iframe width="100%" height="315" src="https://www.youtube.com/embed/cP28lbBz-3Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 		</div>
 	  </div>
-	  <div class="schedule__column schedule__column-right">
+	  <!-- <div class="schedule__column schedule__column-right">
 		<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/1_tall.png" class="schedule__image img-fluid" />
 		<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/3.png" class="schedule__image img-fluid" />
-	  </div>
+	  </div> -->
 	</div>
 
 	<!-- Tour Info
