@@ -357,6 +357,88 @@ body {
 	text-decoration: none;
 }
 
+
+/* Default (before scrolling) */
+#homepage-tickets-button {
+	position: static; /* starts normally in the layout */
+	width: 100%;
+	transition: all 0.3s ease;
+	z-index: 1;
+  }
+  
+  /* Default appearance */
+  #homepage-tickets-button a {
+	background: rgba(0, 0, 0, 0.5);
+	border: 5px solid #2b0100;
+	color: #f11203;
+	transition: all 0.3s ease;
+  }
+  
+  #homepage-tickets-button a h3,
+  #homepage-tickets-button a p {
+	color: #f11203;
+	transition: all 0.3s ease;
+  }
+  
+  /* Stuck (after scroll past sentinel) */
+  #homepage-tickets-button.is-stuck {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	margin: 0 !important;
+	padding: 0;
+	z-index: 9999;
+	border-radius: 0;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  }
+  
+  
+  /* Appearance when stuck */
+  #homepage-tickets-button.is-stuck a {
+	background: #900a00;
+	border: 5px solid black;
+  }
+  
+  #homepage-tickets-button.is-stuck a h3,
+  #homepage-tickets-button.is-stuck a p {
+	color: white;
+  }
+  
+  /* Mobile tweaks */
+  @media (max-width: 768px) {
+	#homepage-tickets-button a {
+	  width: 100%;
+	  padding: 10px 0;
+	  box-sizing: border-box;
+	}
+  
+	body {
+	  padding-top: 100px; /* ensures body content isn't hidden under fixed bar */
+	  overflow-x: hidden;
+	}
+  
+	.body__wrapper {
+	  padding-left: 0;
+	  padding-right: 0;
+	}
+  }
+
+  #homepage-tickets-button {
+	margin-top: 0 !important;
+  }
+  
+  body {
+	margin: 0 !important;
+	padding: 0 !important;
+  }
+  
+  html {
+	margin: 0 !important;
+	padding: 0 !important;
+  }
+  
+  
 @media (max-width: 768px) {
 	.tickets-button a h3 {
 		color: #f11203;
@@ -374,6 +456,7 @@ body {
 	}
 }
 
+
 .description__container {
 	margin: 50px 50px;
 	text-align: center;
@@ -386,7 +469,7 @@ body {
 }
 
 .description__banner a {
-	color: #afd059 !important;
+	color: #eee !important;
 	text-decoration: none !important;
 }
 
@@ -398,6 +481,13 @@ body {
 	font-size: 25px;
 	margin-top: 30px;
 	line-height: 50px;
+	a {
+		color: #f11203;
+		text-decoration: none;
+	}
+	a:hover {
+		text-decoration: underline;
+	}
 }
 
 @media (max-width: 992px) {
