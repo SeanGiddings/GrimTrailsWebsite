@@ -23,8 +23,10 @@
 		<div class="schedulepage__container">
 
 		<h2 class="schedulepage__title">Hours: 8:00pm to 12:00am<h2>
-		<h3 class="schedulepage__subtitle">Fridays and Saturdays starting on
-		  September 19th.</h3>
+		<h3 class="schedulepage__subtitle">
+		Open Fridays and Saturdays from September 19th to November 1st,<br />
+		<strong>PLUS THURSDAY, October 30th</strong>.
+		</h3><br><br>
 				<h3 class="schedulepage__subtitle">Tickets available on site during open hours.</h3>
 				<h3 class="schedulepage__subtitle">Purchase tickets online 24/7!</h3>
 <!-- 
