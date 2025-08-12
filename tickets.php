@@ -35,7 +35,7 @@
 			</form>
 		</div>  -->
 		<div class="tickets-button">
-		<a target="_blank" href="https://grimtrails.fearticket.com/frontapp">
+		<a target="_blank" href="https://grimtrails25.fearticket.com/frontapp">
 			<h3>Buy Tickets Online</h3>
 			<p>(Also available at the Box Office)</p>
 		</a>
