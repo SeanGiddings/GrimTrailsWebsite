@@ -57,17 +57,22 @@
 		<div class="schedule__text">
 		  <div class="schedule__subtitle">2025 EVENT SCHEDULE</div>
 		  <p>
-		We are open every Friday and Saturday from <strong>8:00 PM to Midnight</strong><br />
-		<span>September 19th through November 1st, </br>PLUS Thursday, October 30th.</span>
+		We are open from <strong>8:00 PM to Midnight</strong><br />
+		<!-- <span>September 19th through November 1st, </br>PLUS Thursday, October 30th.</span> -->
 	</p>
 		  <!-- Open Dusk to 12:30AM <br />Fridays and Saturdays starting on
 		  October 2nd
 		  <p>Tickets are <span>$20.00</span> per person.</p> -->
 		</div>
 		</br></br>
-		<!-- <div class="schedule__row">
-		<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/2024-calendar-wide.webp" class="schedule__image img-fluid" />
-	  </div> -->
+		<div class="schedule__row">
+		<img 
+			src="<?php echo get_stylesheet_directory_uri(); ?>/images/2025-calendar-wide.webp" 
+			class="schedule__image img-fluid" 
+			alt="2025 event schedule. Open every Friday and Saturday from September 19th to November 1st." 
+		/>
+		</div>
+
 	  </br></br>
 		<div class="tickets-button">
 		<a target="_blank" href="https://grimtrails25.fearticket.com/frontapp">
