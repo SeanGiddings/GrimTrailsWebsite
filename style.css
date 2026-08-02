@@ -862,6 +862,39 @@ span {
 	margin-top: 20px;
 }
 
+.schedulepage__dates {
+	margin: 30px auto;
+	max-width: 700px;
+}
+
+.schedule-table {
+	width: 100%;
+	border-collapse: collapse;
+	background-color: rgba(0, 0, 0, 0.8);
+	color: #fff;
+}
+
+.schedule-table th,
+.schedule-table td {
+	border: 1px solid #f11203;
+	padding: 10px 12px;
+	text-align: center;
+}
+
+.schedule-table th {
+	background-color: #5A0000;
+	color: #fff;
+	font-family: "Federo", sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+.schedule-hours-note {
+	margin-top: 16px;
+	font-size: 18px;
+	font-family: "Federo", sans-serif;
+}
+
 .video-responsive {
 	overflow: hidden;
 	padding-bottom: 56.25%;
