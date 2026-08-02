@@ -8,7 +8,7 @@
 
 	<!--Buy Tickets-->
 	<div id="homepage-tickets-button" class="tickets-button">
-	<a target="_blank" href="https://grimtrails25.fearticket.com/frontapp">
+	<a target="_blank" href="https://grimtrails26.fearticket.com/">
 		<h3>Buy Tickets Online</h3>
 		<p>(Also available at the Box Office)</p>
 	</a>
@@ -17,7 +17,7 @@
 	<!--Video-->
 	<div class="video-responsive">
 	<div class="video-container">
-	  <iframe width="100%" height="700" src="https://www.youtube.com/embed/h-OThXvdMRA?autoplay=1&controls=0&showinfo=0&autohide=1&loop=1&mute=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	  <iframe width="100%" height="700" src="https://www.youtube.com/embed/dUz8DCRl5dE?autoplay=1&controls=0&showinfo=0&autohide=1&loop=1&mute=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 	</div>
 	</div>
 
@@ -55,27 +55,71 @@
 	  </div>
 	  <div class="schedule__column">
 		<div class="schedule__text">
-		  <div class="schedule__subtitle">2025 EVENT SCHEDULE</div>
-		  <p>
-		We are open from <strong>8:00 PM to Midnight</strong><br />
-		<!-- <span>September 19th through November 1st, </br>PLUS Thursday, October 30th.</span> -->
-	</p>
+		  <div class="schedule__subtitle">2026 EVENT SCHEDULE</div>
 		  <!-- Open Dusk to 12:30AM <br />Fridays and Saturdays starting on
 		  October 2nd
 		  <p>Tickets are <span>$20.00</span> per person.</p> -->
 		</div>
-		</br></br>
 		<div class="schedule__row">
-		<img 
+		<!-- <img 
 			src="<?php echo get_stylesheet_directory_uri(); ?>/images/2025-calendar-wide.webp" 
 			class="schedule__image img-fluid" 
 			alt="2025 event schedule. Open every Friday and Saturday from September 19th to November 1st." 
-		/>
+		/> -->
+		<div class="schedulepage__dates">
+					<table class="schedule-table">
+						<thead>
+							<tr>
+								<th>Friday</th>
+								<th>Saturday</th>
+								<th>Sunday</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Sept 18</td>
+								<td>Sept 19</td>
+								<td>&mdash;</td>
+							</tr>
+							<tr>
+								<td>Sept 25</td>
+								<td>Sept 26</td>
+								<td>&mdash;</td>
+							</tr>
+							<tr>
+								<td>Oct 2</td>
+								<td>Oct 3</td>
+								<td>&mdash;</td>
+							</tr>
+							<tr>
+								<td>Oct 9</td>
+								<td>Oct 10</td>
+								<td>&mdash;</td>
+							</tr>
+							<tr>
+								<td>Oct 16</td>
+								<td>Oct 17</td>
+								<td>Oct 18</td>
+							</tr>
+							<tr>
+								<td>Oct 23</td>
+								<td>Oct 24</td>
+								<td>Oct 25</td>
+							</tr>
+							<tr>
+								<td>Oct 30</td>
+								<td>Oct 31 (Halloween)</td>
+								<td>&mdash;</td>
+							</tr>
+						</tbody>
+					</table>
+					<p class="schedule-hours-note">Friday &amp; Saturday: 8:00 PM &ndash; 12:00 AM &nbsp;|&nbsp; Sunday: 8:00 PM &ndash; 10:00 PM</p>
+				</div>
 		</div>
 
 	  </br></br>
 		<div class="tickets-button">
-		<a target="_blank" href="https://grimtrails25.fearticket.com/frontapp">
+		<a target="_blank" href="https://grimtrails26.fearticket.com/">
 			<h3>Buy Tickets Online</h3>
 			<p>(Also available at the Box Office)</p>
 		</a>
