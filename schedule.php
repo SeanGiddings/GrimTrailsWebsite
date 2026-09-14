@@ -24,9 +24,9 @@
 
 				<h3 class="schedulepage__subtitle">Tickets available on-site at haunt during open hours.</h3>
 				<h3 class="schedulepage__subtitle">Purchase tickets online 24/7!</h3>
-				<!-- <div class="schedulepage__image">
+				<div class="schedulepage__image">
 					<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/2026-calendar-wide.webp" class="schedule__image img-fluid" />
-				</div>  -->
+				</div> 
 				<div class="schedulepage__dates">
 					<table class="schedule-table">
 						<thead>
