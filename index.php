@@ -49,6 +49,7 @@
 	</div>
 
 	<!--Event Schedule Blocks-->
+	<!--Event Schedule Blocks-->
 	<div class="schedule__container">
 	  <div class="schedule__column schedule__mobile">
 		<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/1_homepage.png" class="schedule__image img-fluid" />
@@ -56,17 +57,40 @@
 	  <div class="schedule__column">
 		<div class="schedule__text">
 		  <div class="schedule__subtitle">2026 EVENT SCHEDULE</div>
+		  <p>
+		<!-- We are open from <strong>8:00 PM to Midnight</strong><br /> -->
+		<!-- <span>September 19th through November 1st, </br>PLUS Thursday, October 30th.</span> -->
+	</p>
 		  <!-- Open Dusk to 12:30AM <br />Fridays and Saturdays starting on
 		  October 2nd
 		  <p>Tickets are <span>$20.00</span> per person.</p> -->
 		</div>
+		</br></br>
 		<div class="schedule__row">
-		<!-- <img 
-			src="<?php echo get_stylesheet_directory_uri(); ?>/images/2025-calendar-wide.webp" 
+		<img 
+			src="<?php echo get_stylesheet_directory_uri(); ?>/images/2026-calendar-wide.webp" 
 			class="schedule__image img-fluid" 
-			alt="2025 event schedule. Open every Friday and Saturday from September 19th to November 1st." 
-		/> -->
-		<div class="schedulepage__dates">
+			alt="2026 event schedule. Open every Friday and Saturday from September 18th to October 31st." 
+		/>
+		</div>
+
+	  </br></br>
+		<div class="tickets-button">
+		<a target="_blank" href="https://grimtrails26.fearticket.com/frontapp">
+			<h3>Buy Tickets Online</h3>
+			<p>(Also available at the Box Office)</p>
+		</a>
+	</div>
+		<div class="schedule__video">
+		  <iframe width="100%" height="315" src="https://www.youtube.com/embed/cP28lbBz-3Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+	  </div>
+	  <div class="schedule__column schedule__column-right">
+		<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/1_tall.png" class="schedule__image img-fluid" />
+		<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/3.png" class="schedule__image img-fluid" />
+	  </div>
+	</div>
+		<!-- <div class="schedulepage__dates">
 					<table class="schedule-table">
 						<thead>
 							<tr>
@@ -115,24 +139,8 @@
 					</table>
 					<p class="schedule-hours-note">Friday &amp; Saturday: 8:00 PM &ndash; 12:00 AM &nbsp;|&nbsp; Sunday: 8:00 PM &ndash; 10:00 PM</p>
 				</div>
-		</div>
+		</div> -->
 
-	  </br></br>
-		<div class="tickets-button">
-		<a target="_blank" href="https://grimtrails26.fearticket.com/">
-			<h3>Buy Tickets Online</h3>
-			<p>(Also available at the Box Office)</p>
-		</a>
-	</div>
-		<div class="schedule__video">
-		  <iframe width="100%" height="315" src="https://www.youtube.com/embed/cP28lbBz-3Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-		</div>
-	  </div>
-	  <!-- <div class="schedule__column schedule__column-right">
-		<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/1_tall.png" class="schedule__image img-fluid" />
-		<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/3.png" class="schedule__image img-fluid" />
-	  </div> -->
-	</div>
 
 	<!-- Tour Info
 	<div class="tour__container">
